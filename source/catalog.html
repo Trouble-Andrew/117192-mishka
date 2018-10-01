@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+
+<body>
+
+  <header class="page-header">
+    <a href="" class="page-header__logo">
+        <img src="http://placehold.it/150x100" alt="" class="page-header__logo-image">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="">Вязание на заказ</a>
+          </li>
+        </ul>
+        <div class="main-nav__search search-form">
+          <a href="">Поиск по сайту</a>
+        </div>
+        <div class="main-nav__cart">
+          <a href="">Корзина: пока пуста</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-catalog">
+    <h1 class="page-catalog__title">Каталог товаров</h1>
+    <section class="catalog">
+      <ul class="catalog__list">
+        <li class="catalog__item card">
+          <a href="" class="card__image">
+            <img src="http://placehold.it/150x100" alt="">
+          </a>
+          <h3><a href="" class="card__name">Зайчик-попрыгайчик</a></h3>
+          <p class="card__desc">Рост 30 см, вес 200 г</p>
+          <div class="card__price-wrapper">
+            <p class="card__price">1 200 руб.</p>
+            <button type="button" name="in-cart" class="card__buy"></button>
+          </div>
+        </li>
+        <li class="catalog__item card">
+          <a href="" class="card__image">
+            <img src="http://placehold.it/150x100" alt="">
+          </a>
+          <h3><a href="" class="card__name">Корзинка для белья</a></h3>
+          <p class="card__desc">Диаметр 15 см, высота 10 см</p>
+          <div class="card__price-wrapper">
+            <p class="card__price">690 руб.</p>
+            <button type="button" name="in-cart" class="card__buy"></button>
+          </div>
+        </li>
+        <li class="catalog__item card">
+          <a href="" class="card__image">
+            <img src="http://placehold.it/150x100" alt="">
+          </a>
+          <h3><a href="" class="card__name">Большая корзинка для игрушек</a></h3>
+          <p class="card__desc">Диаметр 30 см, высота 30 см</p>
+          <div class="card__price-wrapper">
+            <p class="card__price">1 500 руб.</p>
+            <button type="button" name="in-cart" class="card__buy"></button>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="making">
+      <h2 class="making__title">Процесс производства</h2>
+      <div class="making__video"></div>
+      <p class="making__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <a href="" class="making__in-cart button">Сделать заказ</a>
+    </section>
+    <section class="modal add-in-cart">
+      <h2 class="add-in-cart__title">Добавить в корзину</h2>
+      <p class="add-in-cart__size">Выберите размер:</p>
+      <form action="https://echo.htmlacademy.ru" method="get" class="add-in-cart__sizes size">
+        <fieldset>
+          <legend>Тип</legend>
+          <ul class="size__list">
+            <li class="size__item">
+              <label for="size-s" class="size__label">
+                <input type="radio" name="size" value="size-s" class="size__input visually-hidden" id="size-s" checked>
+                <span class="size__radio-indicator"></span>
+                S
+              </label>
+            </li>
+            <li class="size__item">
+              <label for="size-m" class="size__label">
+                <input type="radio" name="size" value="size-m" class="size__input visually-hidden" id="size-m" checked>
+                <span class="size__radio-indicator"></span>
+                M
+              </label>
+            </li>
+            <li class="size__item">
+              <label for="size-l" class="size__label">
+                <input type="radio" name="size" value="size-l" class="size__input visually-hidden" id="size-l" checked>
+                <span class="size__radio-indicator"></span>
+                L
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="add-in-cart__button button">Добавить</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="" class="social__link social__link--instagram"></a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link social__link--facebook"></a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link social__link--twitter"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано:</b>
+      <a href="" class="copyright__link"></a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
