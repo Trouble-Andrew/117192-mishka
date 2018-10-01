@@ -54,12 +54,14 @@
       <table class="popular__table">
         <tr>
           <th>Цвет</th>
-          <th>Диаметр</th>
-          <th>Высота</th>
+          <td>«Тиффани»/серый</td>
         </tr>
         <tr>
-          <td>«Тиффани»/серый</td>
+          <th>Диаметр</th>
           <td>25 см</td>
+        </tr>
+        <tr>
+          <th>Высота</th>
           <td>15 см</td>
         </tr>
       </table>
@@ -67,9 +69,7 @@
         <img src="http://placehold.it/150x100" alt="Вязанные корзинки">
       </div>
       <div class="popular__price">Цена: 990 руб.</div>
-      <div class="popular__button button">
-        <a href="">Заказать</a>
-      </div>
+      <a href="" class="popular__button button">Заказать</a>
     </section>
     <section class="about-us">
       <h2 class="about-us__title">Коротко о нас</h2>
@@ -103,20 +103,18 @@
     <section class="reviews">
       <div class="reviews__wrapper slider">
         <h2 class="reviews__title">Отзывы</h2>
-        <div class="reviews__list slider__list">
-          <div class="reviews__item slider__item">
-            <p class="reviews__text">
+        <ul class="reviews__list slider__list">
+          <li class="reviews__item review slider__item">
+            <p class="review__text">
               Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
             </p>
-            <a href="" class="reviews__author">Анастасия Красильникова</a>
-            <a href="" class="reviews__author-nickname">@misssssiskras</a>
-          </div>
-        </div>
-        <div class="reviews__controls slider__controls">
-          <button class="reviews__control slider__control reviews__prev" type="button"></button>
-          <button class="reviews__control slider__control reviews__next" type="button"></button>
-
-
+            <a href="" class="review__author">Анастасия Красильникова</a>
+            <a href="" class="review__author-nickname">@misssssiskras</a>
+          </li>
+        </ul>
+        <div class="slider__controls">
+          <button class="slider__control slider__control--prev" type="button"></button>
+          <button class="slider__control slider__control--next" type="button"></button>
         </div>
         <a href="" class="reviews__write button">Написать</a>
       </div>
@@ -126,12 +124,12 @@
       <table class="contacts__table">
         <tr>
           <th>e-mail:</th>
-          <th>адрес:</th>
-        </tr>
-        <tr>
           <td>
             <a href="" class="contacts__email">info@mimimishkashop.ru</a>
           </td>
+        </tr>
+        <tr>
+          <th>адрес:</th>
           <td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
         </tr>
       </table>
@@ -141,14 +139,35 @@
     <section class="modal add-in-cart">
       <h2 class="add-in-cart__title">Добавить в корзину</h2>
       <p class="add-in-cart__size">Выберите размер:</p>
-      <div class="add-in-cart__sizes size">
-        <ul class="size__list">
-          <li class="size-item"><a href="" class="size__link">S</a></li>
-          <li class="size-item"><a href="" class="size__link">M</a></li>
-          <li class="size-item"><a href="" class="size__link">L</a></li>
-        </ul>
-      </div>
-      <a href="" class="add-in-cart__button button">Добавить</a>
+      <form action="https://echo.htmlacademy.ru" method="get" class="add-in-cart__sizes size">
+        <fieldset>
+          <legend>Тип</legend>
+          <ul class="size__list">
+            <li class="size__item">
+              <label for="size-s" class="size__label">
+                <input type="radio" name="size" value="size-s" class="size__input visually-hidden" id="size-s" checked>
+                <span class="size__radio-indicator"></span>
+                S
+              </label>
+            </li>
+            <li class="size__item">
+              <label for="size-m" class="size__label">
+                <input type="radio" name="size" value="size-m" class="size__input visually-hidden" id="size-m" checked>
+                <span class="size__radio-indicator"></span>
+                M
+              </label>
+            </li>
+            <li class="size__item">
+              <label for="size-l" class="size__label">
+                <input type="radio" name="size" value="size-l" class="size__input visually-hidden" id="size-l" checked>
+                <span class="size__radio-indicator"></span>
+                L
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="add-in-cart__button button">Добавить</button>
+      </form>
     </section>
   </main>
 
