@@ -1,5 +1,9 @@
-.page-header {
+.main-nav {
   background-color: $bg-white;
   color: $c-text-base;
   font-size: $fz-base;
+}
+
+.main-nav__list {
+  @include clear-list;
 }

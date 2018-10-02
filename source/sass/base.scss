@@ -12,12 +12,19 @@
   src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 body {
-  // font-family: $ff_base;
-  // font-size: $fz_base;
+  font-family: $ff_base;
+  font-size: $fz_base;
   color: $c_text_base;
-  // background-color: $bg_white;
+  background-color: $bg_white;
 }
 
 img {
