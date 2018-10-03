@@ -1,0 +1,33 @@
+.reviews__title {
+  color: $c_text_base;
+  font-size: $fz-xl;
+  font-weight: $fw-bold;
+  line-height: 30px;
+}
+
+.reviews__list {
+  @include clear-list;
+}
+
+.review__text {
+  color: $c_text_alt;
+  font-size: $fz-s;
+  font-weight: $fw-base;
+  line-height: 30px;
+}
+
+.review__author {
+  @include clear-link;
+  color: $c_text_base;
+  font-size: $fz-base;
+  font-weight: $fw-bold;
+  line-height: 24px;
+}
+
+.review__author-nickname {
+  @include clear-link;
+  color: $c_text_alt;
+  font-size: $fz-base;
+  font-weight: $fw-base;
+  line-height: 30px;
+}

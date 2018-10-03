@@ -1,0 +1,26 @@
+.contacts__title {
+  color: $c_text_base;
+  font-size: 18px;
+  font-weight: $fw-bold;
+  line-height: 30px;
+}
+
+.contacts__table {
+  margin-bottom: 35px;
+}
+
+.contacts__email {
+  @include clear-link;
+  color: $c_text_alt;
+  font-size: $fz-s;
+  font-weight: $fw-base;
+  line-height: 30px;
+}
+
+.contacts__map-link {
+  display: block;
+  background-image: url("../img/map-mobile@1x.jpg");
+  width: 322px;
+  height: 457px;
+  margin-bottom: 39px;
+}

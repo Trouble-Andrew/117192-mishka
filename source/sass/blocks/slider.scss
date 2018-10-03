@@ -1,0 +1,22 @@
+.slider__control {
+  text-align: center;
+  line-height: 1;
+  overflow: hidden;
+  text-decoration: none;
+  width: 130px;
+  height: 50px;
+  border: 1px solid #ececec;
+  background-color: $bg-white;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.slider__control--prev {
+  background-image: url("../img/icon-left-arrow.svg");
+}
+
+.slider__control--next {
+  background-image: url("../img/icon-right-arrow.svg");
+}

@@ -1,0 +1,17 @@
+.table {
+  color: $c-text-alt;
+  font-size: $fz-s;
+  font-weight: $fw-base;
+  line-height: 20px;
+  text-align: left;
+}
+
+.table__head {
+  color: $c-text-alt;
+  font-size: $fz-s;
+  font-weight: $fw-base;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+}

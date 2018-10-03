@@ -1,3 +1,13 @@
+.site-list {
+  @include clear-mp;
+}
+
+.site-list__item {
+  padding-left: 75px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .site-list__link {
   @include clear-link;
   color: $c-text-base;
