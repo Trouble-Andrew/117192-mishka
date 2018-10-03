@@ -1,0 +1,31 @@
+.card__name {
+  @include clear-link;
+  color: $c_text_base;
+  font-size: $fz-base;
+  font-weight: $fw-bold;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.card__desc {
+  color: $c_text_alt;
+  font-size: $fz-xs;
+  font-weight: $fw-base;
+  line-height: 30px;
+  margin: 0;
+}
+
+.card__price {
+  color: $c_text_alt;
+  font-size: $fz-s;
+  font-weight: $fw-bold;
+  line-height: 24px;
+  margin: 0;
+}
+
+.card__buy {
+  border: none;
+  background-color: $bg-white;
+  cursor: pointer;
+}

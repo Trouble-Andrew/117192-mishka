@@ -10,8 +10,15 @@
 
 .site-list__link {
   @include clear-link;
+  position: relative;
   color: $c-text-base;
   font-size: $fz-base;
   font-weight: $fw-bold;
   line-height: 24px;
+}
+
+.site-list__svg {
+  position: absolute;
+  left: -30px;
+  top: 2px;
 }
