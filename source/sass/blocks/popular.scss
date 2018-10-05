@@ -1,0 +1,57 @@
+.popular {
+  // background-image: url("../img/bg-zigzag-line.svg");
+  // background-repeat: no-repeat;
+  // background-position: bottom;
+}
+
+.popular__title-link {
+  @include clear-link;
+  color: $c-text-base;
+  font-size: $fz-xl;
+  font-weight: $fw-bold;
+  line-height: 30px;
+}
+
+.popular__title {
+  margin-bottom: 8px;
+}
+
+.popular__deal {
+  color: $c-text-green;
+  font-size: $fz-base;
+  font-weight: $fw-bold;
+  line-height: 20px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.popular__intro {
+  color: $c-text-alt;
+  font-size: $fz-s;
+  font-weight: $fw-base;
+  line-height: 24px;
+}
+
+.popular__table {
+  color: $c-text-alt;
+  font-size: $fz-s;
+  font-weight: $fw-base;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+
+.popular__image {
+  color: $c-text-alt;
+  font-size: $fz-s;
+  font-weight: $fw-base;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+
+.popular__price {
+  color: $c-text-alt;
+  font-size: $fz-s;
+  font-weight: $fw-bold;
+  line-height: 24px;
+  margin-bottom: 25px;
+}

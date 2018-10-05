@@ -1,0 +1,17 @@
+.about-us__title {
+  color: $c-text-base;
+  font-size: $fz-xl;
+  font-weight: $fw-bold;
+  line-height: 30px;
+}
+
+.about-us__list {
+  @include clear-list;
+}
+
+.about-us__text {
+  color: $c-text-base;
+  font-size: $fz-base;
+  font-weight: $fw-bold;
+  line-height: 20px;
+}

@@ -1,0 +1,166 @@
+.form {
+  padding-bottom: 55px;
+}
+
+.form__legend {
+  position: relative;
+  color: $c-text-green;
+  font-size: $fz-base;
+  font-weight: $fw-bold;
+  line-height: 16px;
+  margin-bottom: 35px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 8px;
+    right: -203px;
+    width: 198px;
+    height: 1px;
+    background-color: $bg-green;
+  }
+}
+
+.form__fieldset {
+  @include clear-mp;
+  border: none;
+  padding-bottom: 20px;
+}
+
+.form__list {
+  @include clear-list;
+}
+
+.form__option,
+.form__label {
+  color: $c-text-base;
+  font-size: $fz-base;
+  font-weight: $fw-bold;
+  line-height: 18px;
+  margin-bottom: 25px;
+}
+/////////////////radio button/////////////////
+.form__input--radio {
+  opacity: 0;
+}
+
+.form__radio-label,
+.form__checkbox-label {
+  position: relative;
+  display: inline-block;
+  padding-left: 62px;
+  cursor: pointer;
+}
+
+.form__radio-label::before,
+.form__radio-label::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  cursor: pointer;
+}
+
+.form__radio-label::before {
+  height: 40px;
+  width: 40px;
+  border: 2px solid $c-text-alt;
+  border-radius: 50%;
+  left: 0;
+  top: -9px;
+}
+
+.form__radio-label::after {
+  height: 16px;
+  width: 16px;
+  background-color: $bg-green;
+  border-radius: 50%;
+  left: 12px;
+  top: 3px;
+}
+
+.form__input--radio + .form__radio-label::after {
+  content: none;
+}
+
+.form__input--radio:checked + .form__radio-label::after {
+  content: "";
+}
+
+.form__input--radio:focus + .form__radio-label::before {
+  outline: rgb(59, 153, 252) auto 5px;
+  border-radius: 50%;
+}
+//////////////////////////////////
+/////////////////checkbox/////////////////
+.form__input--checkbox {
+  opacity: 0;
+}
+
+.form__checkbox-label {
+  position: relative;
+  display: inline-block;
+  padding-left: 62px;
+}
+
+.form__checkbox-label::before,
+.form__checkbox-label::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+}
+
+.form__checkbox-label::before {
+  height: 40px;
+  width: 40px;
+  border: 2px solid $c-text-alt;
+  left: 0;
+  top: -10px;
+}
+
+.form__checkbox-label::after {
+  height: 11px;
+  width: 22px;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  transform: rotate(-45deg);
+  left: 10px;
+  top: 2px;
+}
+
+.form__input--checkbox + .form__checkbox-label::after {
+  content: none;
+}
+
+.form__input--checkbox:checked + .form__checkbox-label::after {
+  content: "";
+}
+
+.form__input--checkbox:focus + .form__checkbox-label::before {
+  outline: rgb(59, 153, 252) auto 5px;
+}
+//////////////////////////////////
+.form__field {
+  color: $c-text-alt;
+  font-size: $fz-base;
+  font-weight: $fw-base;
+  line-height: 18px;
+  border: none;
+  border-bottom: 2px solid $c-text-base;
+  padding-bottom: 15px;
+}
+
+.form__textarea {
+  border: 2px solid $c-text-base;
+}
+
+.form__note {
+  color: $c-text-alt;
+  font-size: 14px;
+  font-weight: $fw-base;
+  line-height: 16px;
+}
+
+.form__button {
+  background-color: $bg-white;
+  cursor: pointer;
+}

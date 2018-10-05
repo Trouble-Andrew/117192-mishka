@@ -1,0 +1,40 @@
+.size__list {
+  @include clear-list;
+}
+
+.size__input {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  border: 0;
+  overflow: hidden;
+}
+
+.size__label {
+  float: left;
+  display: inline-block;
+  background-color: $bg-white;
+  color: $c-text-alt;
+  font-size: $fz-s;
+  font-weight: $fw-bold;
+  text-align: center;
+  text-shadow: none;
+  width: 82px;
+  height: 52px;
+  padding: 14px 14px;
+  margin-left: 7px;
+  border: 2px solid $bg-grey;
+}
+
+.size__label[value="size-s"] {
+  margin-left: 0;
+}
+
+.size__label:hover {
+  cursor: pointer;
+}
+
+.size__input:checked + label {
+  border-color: $bg-green;
+}

@@ -1,0 +1,7 @@
+.catalog {
+  padding-bottom: 30px;
+}
+
+.catalog__list {
+  @include clear-list;
+}

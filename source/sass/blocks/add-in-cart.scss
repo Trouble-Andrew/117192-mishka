@@ -1,0 +1,24 @@
+.add-in-cart {
+  padding: 36px 30px;
+}
+
+.add-in-cart__title {
+  color: $c-text-base;
+  font-size: $fz-xl;
+  font-weight: $fw-bold;
+  line-height: 30px;
+}
+
+.add-in-cart__size {
+  color: $c-text-alt;
+  font-size: $fz-s;
+  font-weight: $fw-base;
+  line-height: 30px;
+}
+
+.add-in-cart__button {
+  border: none;
+  background-color: $bg-green;
+  color: $c-text-white;
+  margin-top: 30px;
+}

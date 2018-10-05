@@ -1,0 +1,36 @@
+.making {
+  margin-bottom: 25px;
+}
+
+.making__title {
+  color: $c_text_base;
+  font-size: $fz-base;
+  font-weight: $fw-bold;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 25px;
+  padding-left: 55px;
+  background-image: url("../img/icon-video.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.making__desc {
+  color: $c-text-alt;
+  font-size: $fz-xs;
+  font-weight: $fw-base;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.making__video-link {
+  margin-bottom: 30px;
+  display: block;
+}
+
+.making__video {
+  min-height: 150px;
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}

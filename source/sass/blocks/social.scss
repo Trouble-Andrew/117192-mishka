@@ -1,0 +1,8 @@
+.social__list {
+  @include clear-list;
+}
+
+.social__link {
+  width: 30px;
+  height: 30px;
+}
