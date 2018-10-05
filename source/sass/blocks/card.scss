@@ -1,6 +1,6 @@
 .card__name {
   @include clear-link;
-  color: $c_text_base;
+  color: $c-text-base;
   font-size: $fz-base;
   font-weight: $fw-bold;
   line-height: 24px;
@@ -9,7 +9,7 @@
 }
 
 .card__desc {
-  color: $c_text_alt;
+  color: $c-text-alt;
   font-size: $fz-xs;
   font-weight: $fw-base;
   line-height: 30px;
@@ -17,7 +17,7 @@
 }
 
 .card__price {
-  color: $c_text_alt;
+  color: $c-text-alt;
   font-size: $fz-s;
   font-weight: $fw-bold;
   line-height: 24px;

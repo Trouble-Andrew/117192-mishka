@@ -1,5 +1,5 @@
 .reviews__title {
-  color: $c_text_base;
+  color: $c-text-base;
   font-size: $fz-xl;
   font-weight: $fw-bold;
   line-height: 30px;
@@ -10,7 +10,7 @@
 }
 
 .review__text {
-  color: $c_text_alt;
+  color: $c-text-alt;
   font-size: $fz-s;
   font-weight: $fw-base;
   line-height: 30px;
@@ -18,7 +18,7 @@
 
 .review__author {
   @include clear-link;
-  color: $c_text_base;
+  color: $c-text-base;
   font-size: $fz-base;
   font-weight: $fw-bold;
   line-height: 24px;
@@ -26,7 +26,7 @@
 
 .review__author-nickname {
   @include clear-link;
-  color: $c_text_alt;
+  color: $c-text-alt;
   font-size: $fz-base;
   font-weight: $fw-base;
   line-height: 30px;

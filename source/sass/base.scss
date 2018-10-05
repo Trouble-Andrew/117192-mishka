@@ -16,25 +16,22 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 body {
-  font-family: $ff_base;
-  font-size: $fz_base;
-  color: $c_text_base;
-  background-color: $bg_white;
+  font-family: $ff-base;
+  font-size: $fz-base;
+  color: $c-text-base;
+  background-color: $bg-white;
 }
 
 img {
   max-width: 100%;
   height: auto;
-}
-
-fieldset {
-  border: none;
-  @include clear-mp;
 }
 
 .visually-hidden {

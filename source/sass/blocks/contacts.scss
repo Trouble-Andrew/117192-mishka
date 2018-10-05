@@ -3,7 +3,7 @@
 }
 
 .contacts__title {
-  color: $c_text_base;
+  color: $c-text-base;
   font-size: 18px;
   font-weight: $fw-bold;
   line-height: 30px;
@@ -15,7 +15,7 @@
 
 .contacts__email {
   @include clear-link;
-  color: $c_text_alt;
+  color: $c-text-alt;
   font-size: $fz-s;
   font-weight: $fw-base;
   line-height: 30px;

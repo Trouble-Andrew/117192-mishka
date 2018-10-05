@@ -1,13 +1,11 @@
 .page-footer {
-  background-color: $bg_grey;
+  background-color: $bg-grey;
   padding: 25px 69px;
 }
 
 .page-footer__copyright {
   position: relative;
-}
 
-.page-footer__copyright {
   &::before {
     position: absolute;
     content: "";
