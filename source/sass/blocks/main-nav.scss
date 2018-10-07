@@ -19,3 +19,52 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: flex;
+  }
+
+  .main-nav__list:last-child {
+    margin-left: auto;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__search {
+    padding: 0;
+  }
+
+  .main-nav__cart {
+    padding: 0;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    display: flex;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__search {
+    padding: 0;
+  }
+
+  .main-nav__cart {
+    padding: 0;
+  }
+}

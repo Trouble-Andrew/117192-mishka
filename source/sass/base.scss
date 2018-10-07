@@ -23,10 +23,12 @@ html {
 }
 
 body {
+  @include clear-mp;
   font-family: $ff-base;
   font-size: $fz-base;
   color: $c-text-base;
   background-color: $bg-white;
+  min-height: 320px;
 }
 
 img {

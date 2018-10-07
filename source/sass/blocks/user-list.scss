@@ -1,0 +1,38 @@
+.user-list__item {
+  border-top: 1px solid #ececec;
+}
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    display: flex;
+  }
+
+  .user-list__item {
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+  }
+
+  .user-list__link--search {
+    font-size: 0;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .user-list {
+    display: flex;
+  }
+
+  .user-list__item {
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+  }
+
+  .user-list__link--search {
+    font-size: 0;
+  }
+}

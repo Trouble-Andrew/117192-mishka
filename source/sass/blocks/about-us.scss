@@ -9,9 +9,65 @@
   @include clear-list;
 }
 
+.about-us__item {
+  margin-bottom: 30px;
+}
+
 .about-us__text {
   color: $c-text-base;
   font-size: $fz-base;
   font-weight: $fw-bold;
   line-height: 20px;
+}
+
+.about-us__wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us__wrapper {
+    align-items: flex-start;
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .about-us__item {
+    width: 50%;
+  }
+
+  .about-us__item:nth-child(1) {
+    order: 0;
+  }
+
+  .about-us__item:nth-child(2) {
+    order: 3;
+  }
+
+  .about-us__item:nth-child(3) {
+    order: 5;
+  }
+
+  .about-us__item:nth-child(4) {
+    order: 1;
+  }
+
+  .about-us__item:nth-child(5) {
+    order: 4;
+  }
+
+  .about-us__item:nth-child(6) {
+    order: 2;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .about-us__wrapper {
+    align-items: flex-start;
+  }
 }
