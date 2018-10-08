@@ -1,4 +1,9 @@
 .contacts {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 40px;
   padding-bottom: 39px;
 }
 
@@ -7,10 +12,14 @@
   font-size: 18px;
   font-weight: $fw-bold;
   line-height: 30px;
+  width: 260px;
+  margin: 0 auto;
 }
 
 .contacts__table {
+  margin: 0 auto;
   margin-bottom: 35px;
+  width: 260px;
 }
 
 .contacts__email {
@@ -26,5 +35,105 @@
   background-image: url("../img/map-mobile@1x.jpg");
   width: 322px;
   height: 457px;
+  margin: 0 auto;
   margin-bottom: 39px;
+}
+
+.contacts__write-us {
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 auto;
+  width: 260px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    flex-direction: row;
+    flex-wrap: wrap;
+    // padding-left: 0;
+    // padding-right: 0;
+  }
+
+  .contacts__title {
+    width: 640px;
+    margin: 0 auto;
+    margin-bottom: 65px;
+  }
+
+  .contacts__table {
+    margin: 0 auto;
+    width: 640px;
+    margin-bottom: 60px;
+  }
+
+  .contacts__tbody {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .contacts__row {
+    width: 50%;
+  }
+
+  .contacts__head {
+    padding-top: 0;
+    vertical-align: top;
+  }
+
+  .contacts__cell {
+    vertical-align: top;
+  }
+
+  .contacts__map {
+    width: 100%;
+  }
+
+  .contacts__map-link {
+    background-image: url("../img/map-tablet@1x.jpg");
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: 960px;
+    min-height: 645px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .contacts__title {
+    margin: 0;
+    font-size: 57px;
+    font-weight: $fw-bold;
+    line-height: 57px;
+    margin-bottom: 60px;
+  }
+
+  .contacts__table {
+    width: 300px;
+    margin: 0;
+  }
+
+  .contacts__tbody {
+    display: table;
+  }
+
+  .contacts__map {
+    width: 50%;
+    margin-top: -220px;
+  }
+
+  .contacts__map-link {
+    background-image: url("../img/map-desktop@1x.jpg");
+  }
+
+  .contacts__write-us {
+    align-self: flex-start;
+    margin: 0;
+    margin-right: auto;
+    margin-top: -160px;
+  }
 }
