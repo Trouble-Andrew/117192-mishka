@@ -5,4 +5,24 @@
   font-weight: $fw-bold;
   line-height: 30px;
   padding: 75px 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-catalog__title {
+    background-color: $bg-grey;
+    color: $c-text-base;
+    font-size: $fz-xxl;
+    font-weight: $fw-bold;
+    line-height: 30px;
+    padding: 75px 40px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .page-catalog__title {
+    margin-bottom: 100px;
+  }
 }

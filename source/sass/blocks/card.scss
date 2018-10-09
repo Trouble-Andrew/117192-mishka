@@ -1,3 +1,12 @@
+.card {
+  padding-bottom: 25px;
+  border: 1px solid #ececec;
+}
+
+.card__image {
+  margin-bottom: 30px;
+}
+
 .card__name {
   @include clear-link;
   color: $c-text-base;
@@ -6,6 +15,16 @@
   line-height: 24px;
   margin: 0;
   margin-bottom: 15px;
+  padding-left: 28px;
+  padding-right: 27px;
+}
+
+.card__link {
+  @include clear-link;
+  color: $c-text-base;
+  font-size: $fz-base;
+  font-weight: $fw-bold;
+  line-height: 24px;
 }
 
 .card__desc {
@@ -14,6 +33,27 @@
   font-weight: $fw-base;
   line-height: 30px;
   margin: 0;
+  padding-left: 28px;
+  padding-right: 27px;
+  margin-bottom: 25px;
+}
+
+.card__price-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-left: 28px;
+  padding-right: 27px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    content: "";
+    width: 204px;
+    height: 1px;
+    background-color: #ececec;
+  }
 }
 
 .card__price {
@@ -28,4 +68,58 @@
   border: none;
   background-color: $bg-white;
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .card {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0;
+    min-height: 334px;
+  }
+
+  .card__image {
+    width: 50%;
+  }
+
+  .card__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 32px;
+  }
+
+  .card__name {
+    margin-bottom: -50px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .card {
+    width: 316px;
+    flex-direction: column;
+    padding-bottom: 25px;
+  }
+
+  .card__image {
+    width: 100%;
+  }
+
+  .card__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+  }
+
+  .card__name {
+    margin-bottom: 0;
+  }
 }

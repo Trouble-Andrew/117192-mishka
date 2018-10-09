@@ -1,8 +1,8 @@
 .social__list {
   @include clear-list;
   display: flex;
+  align-items: center;
   margin: 0 auto;
-  margin-bottom: 15px;
 }
 
 .social__item {

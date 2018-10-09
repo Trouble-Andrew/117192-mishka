@@ -1,5 +1,11 @@
 .making {
-  margin-bottom: 25px;
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 58px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 33px;
+  border-bottom: 1px solid #ececec;
 }
 
 .making__title {
@@ -9,10 +15,11 @@
   line-height: 24px;
   margin: 0;
   margin-bottom: 25px;
-  padding-left: 55px;
+  padding-left: 90px;
+  padding-right: 40px;
   background-image: url("../img/icon-video.svg");
   background-repeat: no-repeat;
-  background-position: center left;
+  background-position: center left 34px;
 }
 
 .making__desc {
@@ -22,6 +29,8 @@
   line-height: 24px;
   margin: 0;
   margin-bottom: 25px;
+  padding-left: 34px;
+  padding-right: 43px;
 }
 
 .making__video-link {
@@ -33,4 +42,11 @@
   min-height: 150px;
   background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
+}
+
+.making__in-cart {
+  width: 192px;
+  margin: 0 auto;
+  display: block;
+  padding-left: 25px;
 }

@@ -1,5 +1,7 @@
 .size__list {
   @include clear-list;
+  width: 100%;
+  display: flex;
 }
 
 .size__input {
