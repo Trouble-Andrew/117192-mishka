@@ -55,14 +55,14 @@
   }
 
   .contacts__title {
-    width: 640px;
+    width: 668px;
     margin: 0 auto;
     margin-bottom: 65px;
   }
 
   .contacts__table {
     margin: 0 auto;
-    width: 640px;
+    width: 668px;
     margin-bottom: 60px;
   }
 
@@ -96,9 +96,11 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    width: 960px;
+    width: 1050px;
     min-height: 645px;
     margin: 0 auto;
+    padding-left: 175px;
+    padding-right: 0;
     display: flex;
     justify-content: space-between;
     flex-direction: row;

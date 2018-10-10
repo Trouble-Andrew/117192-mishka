@@ -58,9 +58,16 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    width: 640px;
+    width: 100%;
     min-height: 457px;
     padding-top: 79px;
+  }
+
+  .reviews__wrapper {
+    width: 668px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .reviews__write {
@@ -77,9 +84,18 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    width: 960px;
+    width: 100%;
     min-height: 457px;
     padding-top: 79px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .reviews__wrapper {
+    width: 1050px;
+    margin: 0 auto;
+    padding-left: 175px;
+    padding-right: 0;
   }
 
   .reviews__write {

@@ -2,6 +2,14 @@
   padding-bottom: 55px;
 }
 
+.form__fieldset-wrapper {
+  position: relative;
+}
+
+.form__field-wrapper {
+  margin-bottom: 20px;
+}
+
 .form__legend {
   position: relative;
   color: $c-text-green;
@@ -14,7 +22,7 @@
     position: absolute;
     content: "";
     top: 8px;
-    right: -203px;
+    right: 10px;
     width: 198px;
     height: 1px;
     background-color: $bg-green;
@@ -25,6 +33,7 @@
   @include clear-mp;
   border: none;
   padding-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .form__list {
@@ -38,6 +47,15 @@
   font-weight: $fw-bold;
   line-height: 18px;
   margin-bottom: 25px;
+}
+
+.form__option {
+  margin-bottom: 35px;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 20px;
 }
 /////////////////radio button/////////////////
 .form__input--radio {
@@ -151,6 +169,7 @@
 
 .form__textarea {
   border: 2px solid $c-text-base;
+  width: 100%;
 }
 
 .form__note {
@@ -163,4 +182,114 @@
 .form__button {
   background-color: $bg-white;
   cursor: pointer;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    width: 100%;
+  }
+
+  .form__fieldset-wrapper {
+    display: flex;
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .form__legend {
+    width: 26%;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .form__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 74%;
+  }
+
+  .form__field-wrapper {
+    width: 74%;
+  }
+
+  .form__field {
+    width: 100%;
+  }
+
+  .form__fieldset--colors .form__option {
+    width: 50%;
+  }
+
+  .form__fieldset--name .form__fieldset-wrapper {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .form__fieldset--name .form__legend {
+    margin-right: 0;
+    width: 26%;
+  }
+
+  .form__fieldset--name .form__field {
+    width: 100%;
+  }
+
+  .form__fieldset--name .form__field-wrapper {
+    width: 74%;
+    margin-bottom: 40px;
+  }
+
+  .form__fieldset--add {
+    margin-bottom: 20px;
+  }
+
+  .form__note {
+    position: absolute;
+    bottom: 7px;
+    right: 0;
+  }
+
+  .form__button {
+    width: 230px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .form__fieldset-wrapper {
+    width: 1050px;
+    margin: 0 auto;
+    padding-left: 60px;
+    padding-right: 175px;
+  }
+
+  .form__fieldset--type .form__option {
+    width: 100%;
+  }
+
+  .form__fieldset--colors .form__option {
+    width: 33.3%;
+  }
+
+  .form__fieldset--name .form__field-wrapper {
+    display: flex;
+  }
+
+  .form__fieldset--name .form__label {
+    margin-right: 25px;
+  }
+
+  .form__note {
+    position: absolute;
+    bottom: 7px;
+    right: 175px;
+  }
+
+  .form__button {
+    margin-left: 210px;
+  }
 }

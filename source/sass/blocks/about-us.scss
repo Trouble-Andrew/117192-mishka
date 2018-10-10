@@ -27,6 +27,9 @@
 
 @media (min-width: $tablet-width) {
   .about-us__wrapper {
+    width: 668px;
+    padding-left: 0;
+    padding-right: 0;
     align-items: flex-start;
   }
 
@@ -69,5 +72,8 @@
 @media (min-width: $desktop-width) {
   .about-us__wrapper {
     align-items: flex-start;
+    width: 1050px;
+    margin: 0 auto;
+    padding-left: 175px;
   }
 }

@@ -74,7 +74,9 @@
 @media (min-width: $tablet-width) {
   .popular__wrapper {
     display: flex;
-    width: 640px;
+    width: 668px;
+    padding-left: 0;
+    padding-right: 0;
     margin: 0 auto;
     flex-direction: row;
     flex-wrap: wrap;
@@ -111,8 +113,9 @@
 @media (min-width: $desktop-width) {
   .popular__wrapper {
     display: flex;
-    width: 960px;
+    width: 1050px;
     margin: 0 auto;
+    padding-left: 175px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -120,7 +123,7 @@
   }
 
   .popular__image {
-    margin-right: -30px;
+    margin-right: 0;
     width: 50%;
   }
 }
