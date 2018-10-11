@@ -1,8 +1,8 @@
 .contacts {
   display: flex;
   flex-direction: column;
-  padding-left: 30px;
-  padding-right: 30px;
+  // padding-left: 30px;
+  // padding-right: 30px;
   padding-top: 40px;
   padding-bottom: 39px;
 }
@@ -33,7 +33,7 @@
 .contacts__map-link {
   display: block;
   background-image: url("../img/map-mobile@1x.jpg");
-  width: 322px;
+  width: 320px;
   height: 457px;
   margin: 0 auto;
   margin-bottom: 39px;
@@ -50,8 +50,8 @@
   .contacts {
     flex-direction: row;
     flex-wrap: wrap;
-    // padding-left: 0;
-    // padding-right: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .contacts__title {

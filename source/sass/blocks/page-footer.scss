@@ -1,11 +1,11 @@
 .page-footer {
   background-color: $bg-grey;
-  padding: 25px 69px;
 }
 
 .page-footer__wrapper {
   width: 320px;
   margin: 0 auto;
+  padding: 25px 0;
 }
 
 .page-footer__logo {
@@ -21,18 +21,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   padding-top: 15px;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 1px;
-    left: 1px;
-    background-color: #e5e5e5;
-    width: 320px;
-    height: 1px;
-  }
+  border-top: 1px solid #e5e5e5;
 }
 
 @media (min-width: $tablet-width) {
