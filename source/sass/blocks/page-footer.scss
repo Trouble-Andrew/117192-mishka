@@ -1,11 +1,11 @@
 .page-footer {
   background-color: $bg-grey;
+  padding: 25px 0;
 }
 
 .page-footer__wrapper {
   width: 320px;
   margin: 0 auto;
-  padding: 25px 0;
 }
 
 .page-footer__logo {
@@ -50,6 +50,7 @@
 
   .page-footer__copyright {
     padding-top: 0;
+    border: none;
 
     &::before {
       width: 0;

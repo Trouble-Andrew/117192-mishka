@@ -13,9 +13,9 @@
   .page-catalog__title {
     background-color: $bg-grey;
     color: $c-text-base;
-    font-size: $fz-xxl;
+    font-size: 43px;
     font-weight: $fw-bold;
-    line-height: 30px;
+    line-height: 50px;
     padding: 75px 40px;
   }
 }
@@ -23,6 +23,8 @@
 
 @media (min-width: $desktop-width) {
   .page-catalog__title {
+    font-size: 53px;
+    line-height: 57px;
     margin-bottom: 100px;
   }
 }

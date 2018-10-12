@@ -7,3 +7,18 @@
   padding: 75px 40px;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .page-form__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .page-form__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
