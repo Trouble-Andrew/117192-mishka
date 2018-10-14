@@ -19,6 +19,10 @@
   margin-bottom: 22px;
 }
 
+.page-header__note {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     position: relative;
@@ -29,7 +33,7 @@
     width: 670px;
     min-height: 90px;
     margin: 0 auto;
-    padding-top: 35px;
+    padding-top: 32px;
     background-color: transparent;
   }
 
@@ -39,20 +43,29 @@
     top: 32px;
     margin-bottom: 0;
   }
+
+  .page-header__note {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    color: $c-text-alt;
+    font-size: 15px;
+    font-weight: $fw-base;
+    line-height: 24px;
+  }
 }
 
 
 @media (min-width: $desktop-width) {
   .page-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     width: 1050px;
     min-height: 90px;
     margin: 0 auto;
   }
 
   .page-header__logo {
-    margin-right: 0;
+    left: 50%;
+    right: 50%;
   }
 }

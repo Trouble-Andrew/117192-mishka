@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-color: #f9f9f9;
   background-size: 575px;
-  padding-top: 75px;
+  padding-top: 49px;
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 }
 
@@ -12,7 +12,7 @@
   font-size: $fz-xxl;
   font-weight: $fw-bold;
   line-height: 30px;
-  margin-bottom: 120px;
+  margin-bottom: 122px;
   text-align: center;
   width: 220px;
   margin-left: auto;
@@ -39,8 +39,8 @@
   font-size: $fz-l;
   font-weight: $fw-bold;
   line-height: 24px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 28px;
+  padding-bottom: 27px;
   padding-left: 29px;
   padding-right: 75px;
   background-repeat: no-repeat;
@@ -95,11 +95,15 @@
 
 
 @media (min-width: $desktop-width) {
+  .hero-unit {
+    padding-top: 112px;
+  }
+
   .hero-unit__title {
     font-size: 53px;
     font-weight: $fw-bold;
     line-height: 57px;
-    margin-bottom: 354px;
+    margin-bottom: 359px;
     text-align: center;
     width: 620px;
   }
