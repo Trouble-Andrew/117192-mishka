@@ -4,14 +4,23 @@
   font-size: $fz-xxl;
   font-weight: $fw-bold;
   line-height: 30px;
-  padding: 75px 40px;
+  padding: 72px 40px;
+  padding-bottom: 75px;
   text-align: center;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
+  .page-form {
+    margin-top: -43px;
+    border-top: 1px solid #e5e5e5;
+  }
+
   .page-form__title {
     font-size: 43px;
     line-height: 50px;
+    padding-top: 93px;
+    padding-bottom: 81px;
   }
 }
 
@@ -20,5 +29,6 @@
   .page-form__title {
     font-size: 53px;
     line-height: 57px;
+    padding-bottom: 103px;
   }
 }

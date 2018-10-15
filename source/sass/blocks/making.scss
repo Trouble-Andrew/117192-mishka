@@ -1,12 +1,13 @@
 .making {
   position: relative;
-  width: 320px;
+  width: 260px;
   margin: 0 auto;
   margin-bottom: 58px;
-  padding-left: 30px;
-  padding-right: 30px;
+  // padding-left: 30px;
+  // padding-right: 30px;
+  padding-top: 26px;
   padding-bottom: 33px;
-  border-bottom: 1px solid #ececec;
+  border: 1px solid #ececec;
 }
 
 .making__title {
@@ -15,7 +16,7 @@
   font-weight: $fw-bold;
   line-height: 24px;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   padding-left: 90px;
   padding-right: 40px;
   background-image: url("../img/icon-video.svg");
@@ -35,7 +36,7 @@
 }
 
 .making__video-link {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   display: block;
 }
 
@@ -57,29 +58,37 @@
   .making {
     display: flex;
     flex-direction: column;
-    // flex-wrap: wrap;
-    // justify-content: space-between;
-    // align-items: flex-start;
     width: 668px;
     margin: 0 auto;
+    margin-bottom: 63px;
+    padding-top: 0;
+    padding-bottom: 45px;
     padding-left: 0;
     padding-right: 0;
   }
 
   .making__title {
+    font-size: 20px;
+    font-weight: $fw-bold;
+    line-height: 24px;
     padding-left: 107px;
-    background-position: center left 44px;
+    margin-bottom: 32px;
+    background-position: center left 41px;
   }
 
   .making__desc {
+    font-size: $fz-s;
+    line-height: 30px;
     padding-right: 40px;
     padding-left: 42px;
+    margin-bottom: 35px;
   }
 
   .making__video-link {
     order: -1;
     width: 100%;
     height: 455px;
+    margin-bottom: 37px;
   }
 
   .making__video {
@@ -109,17 +118,17 @@
     padding-top: 47px;
     padding-right: 58px;
     padding-bottom: 0;
-    margin-bottom: 33px;
+    margin-bottom: 104px;
     border-top: 1px solid #ececec;
     border-bottom: 1px solid #ececec;
   }
 
   .making__title {
-    width: 21.9%;
+    width: 23.2%;
     margin-top: 0;
     margin-left: auto;
-    margin-bottom: 42px;
-    padding-top: 45px;
+    margin-bottom: 33px;
+    padding-top: 48px;
     padding-left: 0;
     padding-right: 15px;
     background-position: top -1px left;
@@ -128,7 +137,7 @@
   }
 
   .making__desc-wrapper {
-    width: 21.9%;
+    width: 23.2%;
     margin-left: auto;
   }
 
@@ -143,7 +152,7 @@
     display: block;
     padding-right: 0;
     padding-left: 0;
-    margin-bottom: 50px;
+    margin-bottom: 46px;
   }
 
   .making__in-cart {

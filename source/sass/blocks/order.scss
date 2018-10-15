@@ -1,5 +1,6 @@
 .order {
   width: 320px;
+  padding-top: 22px;
   padding-left: 30px;
   padding-right: 30px;
   margin: 0 auto;
@@ -10,7 +11,8 @@
   font-size: $fz-xs;
   font-weight: $fw-base;
   line-height: 24px;
-  margin-bottom: 25px;
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 @media (min-width: $tablet-width) {
@@ -18,12 +20,15 @@
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+    padding-top: 73px;
   }
 
   .order__text {
     width: 670px;
     margin: 0 auto;
-    margin-bottom: 33px;
+    margin-bottom: 74px;
+    font-size: $fz-base;
+    line-height: 30px;
   }
 
   .order__form {
@@ -35,11 +40,12 @@
 @media (min-width: $desktop-width) {
   .order {
     width: 100%;
+    padding-top: 122px;
     padding-left: 0;
     padding-right: 0;
   }
 
   .order__text {
-    padding-left: 87px;
+    padding-left: 0;
   }
 }
