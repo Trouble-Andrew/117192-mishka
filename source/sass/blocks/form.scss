@@ -475,6 +475,10 @@
 
 
 @media (min-width: $desktop-width) {
+  .form {
+    padding-bottom: 49px;
+  }
+
   .form__fieldset-wrapper {
     width: 1050px;
     margin: 0 auto;
@@ -486,11 +490,18 @@
     width: 100%;
   }
 
+  .form__fieldset--colors .form__list {
+    width: 700px;
+  }
+
   .form__fieldset--colors .form__option {
-    width: 33.3%;
+    // width: 33.3%;
+    width: 26%;
+    margin-right: -5px;
   }
 
   .form__fieldset--name .form__field-wrapper {
+    width: 700px;
     display: flex;
   }
 
@@ -498,14 +509,30 @@
     margin-right: 25px;
   }
 
+  .form__fieldset--name .form__legend {
+    width: 14%;
+  }
+
+  .form__fieldset--add {
+    margin-bottom: 37px;
+  }
+
+  .form__fieldset--add .form__legend {
+    margin-right: 16px;
+  }
+
+  .form__fieldset--add .form__field-wrapper {
+    width: 100%;
+  }
+
   .form__note {
     position: absolute;
-    bottom: 7px;
-    right: 175px;
+    bottom: -18px;
+    right: 174px;
   }
 
   .form__button {
-    margin-left: 210px;
+    margin-left: 115px;
   }
 
   .form__legend {
