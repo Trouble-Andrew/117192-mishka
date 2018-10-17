@@ -148,7 +148,7 @@
     min-height: 636px;
     margin: 0 auto;
     padding-left: 170px;
-    padding-right: 0;
+    padding-right: 29%;
     padding-top: 142px;
     display: flex;
     justify-content: flex-start;
@@ -156,7 +156,7 @@
   }
 
   .contacts__title {
-    width: 30%;
+    width: 100%;
     margin: 0;
     font-size: 53px;
     font-weight: $fw-bold;
@@ -165,13 +165,19 @@
   }
 
   .contacts__table {
-    width: 30%;
+    width: 100%;
     margin: 0;
-    margin-bottom: 78px;
+    margin-bottom: 46px;
   }
 
   .contacts__tbody {
-    display: table;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts__row {
+    width: 100%;
+    margin-bottom: 31px;
   }
 
   .contacts__head {
@@ -190,7 +196,7 @@
   }
 
   .contacts__write-us {
-    width: 26%;
+    width: 230px;
     align-self: flex-start;
     margin: 0;
   }

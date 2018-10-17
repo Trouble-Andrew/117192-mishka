@@ -43,6 +43,7 @@
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .site-list__item {
@@ -75,7 +76,8 @@
 
   .site-list:first-child {
     order: -1;
-    width: 50%;
+    width: 45%;
+    margin-bottom: 49px;
   }
 
   .site-list--desktop {

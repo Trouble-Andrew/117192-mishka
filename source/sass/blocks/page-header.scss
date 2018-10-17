@@ -45,9 +45,10 @@
   }
 
   .page-header__note {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    // position: absolute;
+    // bottom: 0;
+    // right: 0;
+    order: 5;
     display: block;
     color: $c-text-alt;
     font-size: 15px;
@@ -62,10 +63,11 @@
     width: 1050px;
     min-height: 90px;
     margin: 0 auto;
+    padding-top: 30px;
   }
 
   .page-header__logo {
     left: 50%;
-    right: 50%;
+    transform: translateX(-50%);
   }
 }
