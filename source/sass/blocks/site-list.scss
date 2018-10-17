@@ -42,8 +42,10 @@
 
 @media (min-width: $tablet-width) {
   .site-list {
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
+    order: 6;
   }
 
   .site-list__item {
@@ -72,6 +74,7 @@
 @media (min-width: $desktop-width) {
   .site-list {
     display: flex;
+    width: 65%;
   }
 
   .site-list:first-child {
