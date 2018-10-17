@@ -1,12 +1,21 @@
+.about-us {
+  padding-top: 23px;
+}
+
 .about-us__title {
   color: $c-text-base;
   font-size: $fz-xl;
   font-weight: $fw-bold;
   line-height: 30px;
+  margin-bottom: 32px;
 }
 
 .about-us__list {
   @include clear-list;
+}
+
+.about-us__item {
+  margin-bottom: 36px;
 }
 
 .about-us__text {
@@ -14,4 +23,103 @@
   font-size: $fz-base;
   font-weight: $fw-bold;
   line-height: 20px;
+  margin-top: 13px;
+}
+
+.about-us__wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    padding-top: 66px;
+  }
+
+  .about-us__wrapper {
+    width: 668px;
+    padding-left: 0;
+    padding-right: 0;
+    align-items: flex-start;
+  }
+
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .about-us__item {
+    width: 50%;
+    margin-bottom: 65px;
+  }
+
+  .about-us__image {
+    margin-bottom: 10px;
+  }
+
+  .about-us__text {
+    font-size: 20px;
+    font-weight: $fw-bold;
+    line-height: 22px;
+    margin: 0;
+  }
+
+  .about-us__item:nth-child(1) {
+    order: 0;
+  }
+
+  .about-us__item:nth-child(2) {
+    order: 3;
+  }
+
+  .about-us__item:nth-child(3) {
+    order: 5;
+  }
+
+  .about-us__item:nth-child(4) {
+    order: 1;
+  }
+
+  .about-us__item:nth-child(5) {
+    order: 4;
+  }
+
+  .about-us__item:nth-child(6) {
+    order: 2;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    padding-top: 102px;
+  }
+
+  .about-us__wrapper {
+    align-items: flex-start;
+    width: 1050px;
+    margin: 0 auto;
+    padding-left: 171px;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-us__list {
+    justify-content: flex-start;
+  }
+
+  .about-us__item {
+    width: 40%;
+  }
 }

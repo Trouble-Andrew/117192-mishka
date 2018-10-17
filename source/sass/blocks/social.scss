@@ -1,8 +1,25 @@
 .social__list {
   @include clear-list;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.social__item {
+  margin-right: 40px;
+}
+
+.social__item:last-child {
+  margin-right: 0;
 }
 
 .social__link {
   width: 30px;
   height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    margin-left: 75px;
+  }
 }

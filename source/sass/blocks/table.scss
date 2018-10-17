@@ -20,3 +20,9 @@
 .table__row {
   border-bottom: 1px solid #ececec;
 }
+
+@media (min-width: $desktop-width) {
+  .table__head {
+    padding-right: 0;
+  }
+}

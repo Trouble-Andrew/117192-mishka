@@ -1,5 +1,10 @@
 .add-in-cart {
+  display: none;
+  width: 320px;
+  margin: 0 auto;
   padding: 36px 30px;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  border: 1px solid #c6c6c6;
 }
 
 .add-in-cart__title {
@@ -7,6 +12,8 @@
   font-size: $fz-xl;
   font-weight: $fw-bold;
   line-height: 30px;
+  margin-top: 0;
+  text-align: center;
 }
 
 .add-in-cart__size {
@@ -14,6 +21,11 @@
   font-size: $fz-s;
   font-weight: $fw-base;
   line-height: 30px;
+}
+
+.add-in-cart__sizes fieldset {
+  @include clear-mp;
+  border: none;
 }
 
 .add-in-cart__button {

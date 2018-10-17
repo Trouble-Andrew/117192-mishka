@@ -4,5 +4,40 @@
   font-size: $fz-xxl;
   font-weight: $fw-bold;
   line-height: 30px;
-  padding: 75px 40px;
+  padding: 74px 40px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+}
+
+@media (min-width: $tablet-width) {
+  .page-catalog {
+    margin-top: -40px;
+  }
+
+  .page-catalog__title {
+    background-color: $bg-grey;
+    color: $c-text-base;
+    font-size: 43px;
+    font-weight: $fw-bold;
+    line-height: 50px;
+    padding: 95px 40px;
+    padding-bottom: 80px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .page-catalog {
+    margin-top: -43px;
+  }
+
+  .page-catalog__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 94px;
+    padding-bottom: 102px;
+    margin-bottom: 100px;
+  }
 }
