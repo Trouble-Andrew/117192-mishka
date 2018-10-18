@@ -33,16 +33,17 @@
 
 .hero-unit__link {
   @include clear-link;
-  display: block;
+  display: flex;
+  justify-content: space-between;
   background-color: $bg-green;
   color: $c-text-white;
   font-size: $fz-l;
   font-weight: $fw-bold;
   line-height: 24px;
   padding-top: 25px;
-  padding-bottom: 29px;
+  padding-bottom: 17px;
   padding-left: 29px;
-  padding-right: 75px;
+  padding-right: 27px;
   background-repeat: no-repeat;
   // opacity: 0.5;
   // background-position: right 37px center;
@@ -51,21 +52,46 @@
     display: block;
     width: 100px;
   }
-}
 
-.hero-unit__link--interior {
-  opacity: 0.5;
-  background-image: url("../img/icon-interior.svg");
-  background-position: right 37px center;
-}
-
-.hero-unit__link--toys {
-  background-image: url("../img/icon-toy.svg");
-  background-position: right 27px center;
+  svg {
+    opacity: 0.5;
+  }
 }
 
 .hero-unit__link--dark {
   background-color: $bg-green-dark;
+}
+
+.hero-unit__link--interior:hover,
+.hero-unit__link--interior:focus {
+  background-color: #59d5bc;
+
+  svg {
+    opacity: 1;
+  }
+}
+
+.hero-unit__link--interior:active {
+  span,
+  svg {
+    opacity: 0.3;
+  }
+}
+
+.hero-unit__link--dark:hover,
+.hero-unit__link--dark:focus {
+  background-color: #46c1ae;
+
+  svg {
+    opacity: 1;
+  }
+}
+
+.hero-unit__link--dark:active {
+  span,
+  svg {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -93,7 +119,7 @@
   }
 
   .hero-unit__link {
-    padding-right: 80px;
+    padding-right: 35px;
   }
 }
 

@@ -29,13 +29,18 @@
 
 .contacts__row {
   vertical-align: top;
-  margin-bottom: 3px;
+  margin-bottom: 0;
+}
+
+.contacts__row:first-child {
+  margin-bottom: 29px;
 }
 
 .contacts__head {
   padding-top: 0;
   padding-bottom: 0;
   line-height: 30px;
+  padding-right: 28px;
 }
 
 .contacts__cell {
@@ -49,6 +54,17 @@
   font-size: $fz-s;
   font-weight: $fw-base;
   line-height: 30px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid $bg-green;
+}
+
+.contacts__email:hover,
+.contacts:focus {
+  color: #46c1ae;
+}
+
+.contacts__email:active {
+  opacity: 0.3;
 }
 
 .contacts__map-link {

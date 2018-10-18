@@ -14,3 +14,13 @@
   border: 2px solid $c-text-alt;
   cursor: pointer;
 }
+
+.button:hover,
+.button:focus {
+  color: #ffffff;
+  background-color: $c-text-alt;
+}
+
+.button:active {
+  color: #7c7c7c;
+}

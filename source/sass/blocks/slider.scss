@@ -19,6 +19,15 @@
   padding: 0;
 }
 
+.slider__control:hover,
+.slider__control:focus {
+  opacity: 0.6;
+}
+
+.slider__control:active {
+  opacity: 0.3;
+}
+
 .slider__control--prev {
   background-image: url("../img/icon-left-arrow.svg");
 }
