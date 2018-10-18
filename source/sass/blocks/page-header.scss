@@ -17,6 +17,18 @@
   width: 86px;
   height: 35px;
   margin-bottom: 22px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__note {

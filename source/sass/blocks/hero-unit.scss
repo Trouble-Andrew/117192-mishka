@@ -39,12 +39,13 @@
   font-size: $fz-l;
   font-weight: $fw-bold;
   line-height: 24px;
-  padding-top: 28px;
-  padding-bottom: 27px;
+  padding-top: 25px;
+  padding-bottom: 29px;
   padding-left: 29px;
   padding-right: 75px;
   background-repeat: no-repeat;
-  background-position: right 27px center;
+  // opacity: 0.5;
+  // background-position: right 37px center;
 
   span {
     display: block;
@@ -53,11 +54,14 @@
 }
 
 .hero-unit__link--interior {
+  opacity: 0.5;
   background-image: url("../img/icon-interior.svg");
+  background-position: right 37px center;
 }
 
 .hero-unit__link--toys {
   background-image: url("../img/icon-toy.svg");
+  background-position: right 27px center;
 }
 
 .hero-unit__link--dark {
