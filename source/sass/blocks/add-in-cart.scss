@@ -3,8 +3,12 @@
   width: 320px;
   margin: 0 auto;
   padding: 36px 30px;
+  background-color: #ffffff;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   border: 1px solid #c6c6c6;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .add-in-cart__title {
@@ -21,6 +25,7 @@
   font-size: $fz-s;
   font-weight: $fw-base;
   line-height: 30px;
+  text-align: center;
 }
 
 .add-in-cart__sizes fieldset {
@@ -29,8 +34,16 @@
 }
 
 .add-in-cart__button {
+  width: 100%;
   border: none;
   background-color: $bg-green;
   color: $c-text-white;
   margin-top: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .add-in-cart {
+    width: 566px;
+    padding: 45px 108px;
+  }
 }
