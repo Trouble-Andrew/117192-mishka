@@ -37,14 +37,26 @@
   left: -30px;
 }
 
+@media (max-width: $mobile-width-only) {
+  .user-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user-list__item {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .user-list {
     display: flex;
-    margin-bottom: 52px;
+    margin-bottom: 19px;
     margin-left: auto;
     flex-wrap: wrap;
     order: -1;
-    padding-left: 70px;
+    padding-left: 230px;
   }
 
   .user-list__link {
@@ -54,10 +66,10 @@
   .user-list__item {
     position: relative;
     padding-left: 84px;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 33px;
     border: none;
-    // border-left: 1px solid #d3d2d2;
+    border-left: 1px solid #d3d2d2;
   }
 
   .user-list__item:first-child {
@@ -92,11 +104,12 @@
     justify-content: flex-end;
     order: 1;
     width: 45%;
+    padding-left: 70px;
   }
 
   .user-list__item {
-    padding-top: 0;
-    padding-bottom: 0;
+    // padding-top: 0;
+    padding-bottom: 30px;
   }
 
   .user-list__link--search {

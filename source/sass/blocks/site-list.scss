@@ -54,6 +54,26 @@
   top: 2px;
 }
 
+@media (max-width: $mobile-width-only) {
+  .site-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .site-list__item {
+    display: flex;
+    justify-content: center;
+  }
+
+  // .site-list__link {
+  //   margin-left: 40%;
+  // }
+
+  .site-list--desktop {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .site-list {
     width: 60%;
@@ -94,7 +114,9 @@
   .site-list:first-child {
     order: -1;
     width: 45%;
-    margin-bottom: 49px;
+    margin-bottom: 23px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .site-list--desktop {

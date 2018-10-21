@@ -7,7 +7,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 320px;
+  // width: 320px;
+  width: auto;
   margin: 0 auto;
   padding-top: 22px;
 }
@@ -42,10 +43,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 670px;
-    min-height: 90px;
+    width: 84%;
+    max-width: 960px;
     margin: 0 auto;
-    padding-top: 30px;
+    min-height: 90px;
+    // padding-top: 30px;
+    padding-top: 0;
     background-color: transparent;
   }
 
@@ -75,10 +78,12 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
+    max-width: 1050px;
     width: 1050px;
     min-height: 90px;
     margin: 0 auto;
-    padding-top: 30px;
+    // padding-top: 30px;
+    padding-top: 0;
   }
 
   .page-header__logo {
