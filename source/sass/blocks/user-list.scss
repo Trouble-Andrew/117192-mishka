@@ -63,9 +63,13 @@
     font-size: $fz-base;
   }
 
+  .user-list__link--cart {
+    padding-left: 55px;
+  }
+
   .user-list__item {
     position: relative;
-    padding-left: 84px;
+    padding-left: 29px;
     padding-top: 30px;
     padding-bottom: 33px;
     border: none;
@@ -92,8 +96,8 @@
 
   .user-list__svg {
     position: absolute;
-    left: -53px;
-    top: 2px;
+    left: 2px;
+    top: 5px;
   }
 }
 
@@ -114,5 +118,9 @@
 
   .user-list__link--search {
     font-size: 0;
+  }
+
+  .user-list__svg {
+    top: 3px;
   }
 }

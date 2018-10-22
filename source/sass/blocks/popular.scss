@@ -1,13 +1,13 @@
 .popular {
-  // background-image: url("../img/bg-zigzag-line.svg");
-  // background-repeat: no-repeat;
-  // background-position: bottom;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
   padding-top: 26px;
 }
 
 .popular__wrapper {
   position: relative;
-  width: 320px;
+  width: auto;
   padding-left: 30px;
   padding-right: 30px;
   margin: 0 auto;
@@ -77,15 +77,26 @@
   margin-bottom: 25px;
 }
 
+@media (max-width: $mobile-width-only) {
+  .popular__table {
+    width: 100%;
+  }
+
+  .popular__image img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .popular {
-    padding-top: 63px;
+    padding-top: 33px;
     padding-bottom: 52px;
   }
 
   .popular__wrapper {
     display: flex;
-    width: 668px;
+    width: 87%;
     padding-left: 0;
     padding-right: 0;
     margin: 0 auto;

@@ -1,5 +1,5 @@
 .reviews {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   padding-bottom: 52px;
 }
@@ -60,16 +60,22 @@
   min-width: 100%;
 }
 
+// @media (max-width: $mobile-width-only) {
+// }
+
 @media (min-width: $tablet-width) {
   .reviews {
     width: 100%;
     min-height: 457px;
     padding-top: 62px;
     padding-bottom: 97px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 457px;
   }
 
   .reviews__wrapper {
-    width: 668px;
+    width: 87%;
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
