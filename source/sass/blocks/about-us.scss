@@ -1,5 +1,5 @@
 .about-us {
-  padding-top: 23px;
+  padding-top: 5px;
 }
 
 .about-us__title {
@@ -15,7 +15,12 @@
 }
 
 .about-us__item {
-  margin-bottom: 36px;
+  margin-bottom: 30px;
+}
+
+.about-us__image {
+  min-height: 41px;
+  margin-left: 7px;
 }
 
 .about-us__text {
@@ -23,7 +28,7 @@
   font-size: $fz-base;
   font-weight: $fw-bold;
   line-height: 20px;
-  margin-top: 13px;
+  margin-top: 12px;
 }
 
 .about-us__wrapper {
@@ -33,7 +38,8 @@
 
 @media (min-width: $tablet-width) {
   .about-us {
-    padding-top: 66px;
+    padding-top: 51px;
+    padding-bottom: 16px;
   }
 
   .about-us__wrapper {
@@ -63,7 +69,7 @@
   }
 
   .about-us__image {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .about-us__text {
@@ -74,7 +80,7 @@
   }
 
   .about-us__item:nth-child(1) {
-    order: 0;
+    order: 1;
   }
 
   .about-us__item:nth-child(2) {
@@ -86,7 +92,7 @@
   }
 
   .about-us__item:nth-child(4) {
-    order: 1;
+    order: 2;
   }
 
   .about-us__item:nth-child(5) {
@@ -94,14 +100,15 @@
   }
 
   .about-us__item:nth-child(6) {
-    order: 2;
+    order: 6;
   }
 }
 
 
 @media (min-width: $desktop-width) {
   .about-us {
-    padding-top: 102px;
+    padding-top: 62px;
+    padding-bottom: 22px;
   }
 
   .about-us__wrapper {
