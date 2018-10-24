@@ -134,11 +134,11 @@
     padding-bottom: 57px;
   }
 
-  .contacts::before {
+  .contacts__wrapper::before {
     position: absolute;
     content: "";
-    top: 48px;
-    right: 53px;
+    top: 158px;
+    left: 63px;
     display: block;
     width: 47px;
     height: 81px;

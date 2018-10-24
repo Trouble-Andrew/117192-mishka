@@ -26,8 +26,8 @@
     position: absolute;
     content: "";
     top: 8px;
-    right: 10px;
-    width: 198px;
+    right: 0;
+    width: 76.15%;
     height: 1px;
     background-color: $bg-green;
   }
@@ -163,7 +163,17 @@
 /////////////////radio button/////////////////
 .form__input--radio {
   opacity: 0;
-  display: none;
+  // display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .form__radio-label,
@@ -225,7 +235,16 @@
 /////////////////checkbox/////////////////
 .form__input--checkbox {
   opacity: 0;
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .form__checkbox-label {
@@ -337,6 +356,11 @@
 @media (min-width: $tablet-width) {
   .form {
     width: 100%;
+    padding-bottom: 50px;
+  }
+
+  .form__fieldset {
+    padding-bottom: 11px;
   }
 
   .form__fieldset-wrapper {
@@ -368,7 +392,8 @@
     font-size: $fz-l;
     font-weight: $fw-base;
     line-height: 18px;
-    padding-bottom: 7px;
+    margin-top: -5px;
+    padding-bottom: 13px;
     padding-left: 20px;
   }
 
@@ -405,7 +430,7 @@
   .form__fieldset--name .form__field {
     flex-grow: 1;
     padding-left: 20px;
-    padding-bottom: 8px;
+    padding-bottom: 13px;
   }
 
   .form__fieldset--name .form__field-wrapper {
@@ -429,7 +454,7 @@
   }
 
   .form__fieldset--colors .form__fieldset-wrapper {
-    padding-top: 56px;
+    padding-top: 66px;
   }
 
   .form__fieldset--colors .form__list {
@@ -437,7 +462,8 @@
   }
 
   .form__fieldset--name {
-    padding-top: 75px;
+    padding-top: 64px;
+    padding-bottom: 8px;
   }
 
   .form__label {
@@ -455,9 +481,21 @@
     padding-bottom: 28px;
   }
 
+  .form__fieldset--phone .form__field {
+    background-color: #f1f1f1;
+  }
+
+  .form__fieldset--email {
+    padding-bottom: 30px;
+  }
+
+  .form__fieldset--email .form__field {
+    background-color: #f1f1f1;
+  }
+
   .form__fieldset--add {
-    padding-top: 48px;
-    margin-bottom: 38px;
+    padding-top: 33px;
+    margin-bottom: 27px;
   }
 
   .form__fieldset--add .form__legend {
@@ -467,7 +505,6 @@
   /////////////////radio button/////////////////
   .form__input--radio {
     opacity: 0;
-    display: none;
   }
 
   .form__radio-label,
@@ -520,7 +557,6 @@
   /////////////////checkbox/////////////////
   .form__input--checkbox {
     opacity: 0;
-    display: none;
   }
 
   .form__checkbox-label {
@@ -568,6 +604,12 @@
   //////////////////////////////////
 }
 
+.form__fieldset--colors,
+.form__fieldset--phone,
+.form__fieldset--email {
+  background-color: #f1f1f1;
+}
+
 
 @media (min-width: $desktop-width) {
   .form {
@@ -612,8 +654,13 @@
     width: 14%;
   }
 
+  .form__fieldset--phone {
+    padding-top: 64px;
+    padding-bottom: 27px;
+  }
+
   .form__fieldset--add {
-    margin-bottom: 37px;
+    margin-bottom: 25px;
   }
 
   .form__fieldset--add .form__legend {

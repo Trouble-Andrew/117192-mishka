@@ -202,10 +202,17 @@
   .card__desc {
     padding-bottom: 15px;
     margin-bottom: 0;
+    // margin-top: -15px;
   }
+
+  // .card:last-child .card__desc {
+  //   margin-top: 5px;
+  // }
 
   .card__price-wrapper {
     padding-left: 27px;
+    padding-right: 27px;
     padding-bottom: 26px;
+    padding-top: 23px;
   }
 }
