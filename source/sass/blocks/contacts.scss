@@ -154,8 +154,8 @@
   .contacts__wrapper::before {
     position: absolute;
     content: "";
-    top: 158px;
-    left: 63px;
+    top: 48px;
+    right: 55px;
     display: block;
     width: 47px;
     height: 81px;
@@ -166,7 +166,7 @@
 
   .contacts__title {
     // width: 668px;
-    width: 87%;
+    width: 88%;
     margin: 0 auto;
     margin-bottom: 49px;
     font-size: 43px;
@@ -176,7 +176,7 @@
   .contacts__table {
     margin: 0 auto;
     // width: 668px;
-    width: 87%;
+    width: 88%;
     margin-bottom: 54px;
     font-size: $fz-base;
     font-weight: $fw-base;
@@ -264,7 +264,7 @@
     flex-direction: column;
   }
 
-  .contacts::before {
+  .contacts__wrapper::before {
     top: 158px;
     left: 63px;
   }
@@ -290,6 +290,7 @@
     font-weight: $fw-bold;
     line-height: 57px;
     margin-bottom: 48px;
+    letter-spacing: -0.5px;
   }
 
   .contacts__table {

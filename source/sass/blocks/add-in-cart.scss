@@ -47,3 +47,9 @@
     padding: 45px 108px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .add-in-cart__title {
+    letter-spacing: -0.5px;
+  }
+}

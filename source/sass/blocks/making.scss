@@ -41,7 +41,7 @@
   margin: 0;
   margin-bottom: 25px;
   padding-left: 34px;
-  padding-right: 43px;
+  padding-right: 34px;
 }
 
 .making__video-link {
@@ -70,7 +70,12 @@
 
 .making__video-link:active svg {
   transform: translateX(-50%) translateY(-50%) scale(0.8);
-  opacity: 0.3;
+  opacity: 0.6;
+}
+
+.svg--play-active {
+  transform: translateX(-50%) translateY(-50%) scale(0.8);
+  opacity: 0.6;
 }
 
 .making__in-cart {
@@ -107,7 +112,7 @@
     font-size: $fz-s;
     line-height: 30px;
     padding-right: 40px;
-    padding-left: 42px;
+    padding-left: 40px;
     margin-bottom: 35px;
   }
 
@@ -146,7 +151,7 @@
     padding-right: 58px;
     padding-left: 760px;
     padding-bottom: 0;
-    margin-bottom: 104px;
+    margin-bottom: 105px;
     border-top: 1px solid #ececec;
     border-bottom: 1px solid #ececec;
   }

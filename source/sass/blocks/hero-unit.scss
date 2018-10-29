@@ -6,7 +6,6 @@
   background-color: #f9f9f9;
   background-size: 575px;
   padding-top: 49px;
-  // box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
   border-top: 1px solid #ececec;
 }
 
@@ -145,6 +144,7 @@
     padding-top: 29px;
     padding-right: 35px;
     line-height: 30px;
+    letter-spacing: 0.5px;
   }
 }
 
@@ -179,7 +179,7 @@
   }
 
   .hero-unit__link {
-    padding-left: 39px;
+    padding-left: 38px;
     padding-top: 27px;
   }
 }

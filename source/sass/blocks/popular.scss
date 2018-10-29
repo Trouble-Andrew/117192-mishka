@@ -36,7 +36,7 @@
 
 .popular__title {
   margin-top: 0;
-  margin-bottom: 4px;
+  margin-bottom: 7px;
 }
 
 .popular__deal {
@@ -54,7 +54,8 @@
   font-size: $fz-s;
   font-weight: $fw-base;
   line-height: 24px;
-  margin-top: 24px;
+  margin-top: 21px;
+  margin-bottom: 17px;
 }
 
 .popular__table {
@@ -62,7 +63,7 @@
   font-size: $fz-s;
   font-weight: $fw-base;
   line-height: 20px;
-  margin-bottom: 29px;
+  margin-bottom: 26px;
 }
 
 .popular__table .table__head {
@@ -70,7 +71,7 @@
 }
 
 .popular__image {
-  margin-bottom: 23px;
+  margin-bottom: 25px;
   align-self: center;
 }
 
@@ -79,7 +80,7 @@
   font-size: $fz-s;
   font-weight: $fw-bold;
   line-height: 24px;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   align-self: center;
   display: flex;
   flex-direction: column;
@@ -119,7 +120,7 @@
 
   .popular__wrapper {
     display: flex;
-    width: 87%;
+    width: 88%;
     padding-left: 0;
     padding-right: 0;
     margin: 0 auto;
@@ -165,18 +166,22 @@
   .popular__deal {
     width: 80px;
     text-align: center;
-    margin-right: 25px;
+    margin-right: 28px;
     margin-bottom: 0;
-    margin-top: 8px;
+    margin-top: 9px;
   }
 
   .popular__table {
     width: 36%;
     margin-bottom: 54px;
 
-    &table__head {
-      padding-right: 0;
+    &.table__head {
+      padding-right: 21px;
     }
+  }
+
+  .popular__table .table__head {
+    padding-right: 21px;
   }
 
   .popular__order {
@@ -237,6 +242,7 @@
     font-size: 53px;
     font-weight: $fw-bold;
     line-height: 57px;
+    letter-spacing: -0.5px;
   }
 
   .popular__deal {

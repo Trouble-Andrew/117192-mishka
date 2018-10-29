@@ -23,6 +23,20 @@
 
 @media (min-width: $tablet-width) {
   .copyright__text {
-    padding-top: 7px;
+    padding-top: 2px;
+  }
+
+  .copyright__svg {
+    margin-top: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__text {
+    padding-top: 0;
+  }
+
+  .copyright__svg {
+    margin-top: 5px;
   }
 }

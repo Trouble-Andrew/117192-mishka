@@ -160,7 +160,6 @@
 /////////////////radio button/////////////////
 .form__input--radio {
   opacity: 0;
-  // display: none;
   position: absolute;
   width: 1px;
   height: 1px;
@@ -381,7 +380,7 @@
   }
 
   .form__field-wrapper {
-    width: 74%;
+    width: 75%;
   }
 
   .form__field {
@@ -475,7 +474,7 @@
 
   .form__fieldset--phone {
     padding-top: 66px;
-    padding-bottom: 28px;
+    padding-bottom: 27px;
   }
 
   .form__fieldset--phone .form__field {
@@ -496,7 +495,7 @@
   }
 
   .form__fieldset--add .form__legend {
-    margin-top: 39px;
+    margin-top: 33px;
   }
 
   /////////////////radio button/////////////////
@@ -602,12 +601,20 @@
     outline: rgb(59, 153, 252) auto 5px;
   }
   //////////////////////////////////
-}
+  .form__fieldset--colors,
+  .form__fieldset--phone,
+  .form__fieldset--email {
+    background-color: #f1f1f1;
+  }
 
-.form__fieldset--colors,
-.form__fieldset--phone,
-.form__fieldset--email {
-  background-color: #f1f1f1;
+  .svg--phone {
+    right: 19px;
+  }
+
+  .svg--email {
+    top: -6px;
+    right: 16px;
+  }
 }
 
 
@@ -636,8 +643,7 @@
   }
 
   .form__fieldset--colors .form__option {
-    // width: 33.3%;
-    width: 26%;
+    width: 25.8%;
     margin-right: -5px;
   }
 
@@ -659,8 +665,15 @@
     padding-bottom: 27px;
   }
 
+  .form__fieldset--phone .form__legend,
+  .form__fieldset--email .form__legend {
+    width: 16.5%;
+    margin-top: 6px;
+  }
+
   .form__fieldset--add {
     margin-bottom: 25px;
+    padding-top: 35px;
   }
 
   .form__fieldset--add .form__legend {
@@ -693,5 +706,14 @@
   .form__radio-label::after {
     left: 17px;
     top: 0;
+  }
+
+  .svg--phone {
+    right: 8px;
+  }
+
+  .svg--email {
+    top: -3px;
+    right: 4px;
   }
 }
