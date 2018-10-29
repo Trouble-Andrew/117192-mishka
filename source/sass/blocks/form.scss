@@ -2,10 +2,6 @@
   padding-bottom: 55px;
 }
 
-.form__legend {
-  text-transform: uppercase;
-}
-
 .form__fieldset-wrapper {
   position: relative;
 }
@@ -20,14 +16,15 @@
   font-size: $fz-base;
   font-weight: $fw-bold;
   line-height: 16px;
+  text-transform: uppercase;
   margin-bottom: 35px;
 
   &::after {
     position: absolute;
     content: "";
     top: 8px;
-    right: 10px;
-    width: 198px;
+    right: 0;
+    width: 76.15%;
     height: 1px;
     background-color: $bg-green;
   }
@@ -67,7 +64,7 @@
 }
 
 .form__fieldset--name {
-  padding-bottom: 10px;
+  padding-bottom: 9px;
 }
 
 .form__fieldset--name .form__field-wrapper {
@@ -79,7 +76,11 @@
 }
 
 .form__fieldset--name .form__label {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
+}
+
+.form__fieldset--name .form__field {
+  padding-bottom: 17px;
 }
 
 .form__label {
@@ -87,12 +88,55 @@
   margin-bottom: 20px;
 }
 
-.form__fieldset--phone .form__legend {
-  margin-bottom: 18px;
+.form__fieldset--phone .form__field-wrapper {
+  position: relative;
+  margin-bottom: 12px;
 }
 
-.form__fieldset--phone .form__field-wrapper {
-  margin-bottom: 12px;
+.svg--phone {
+  position: absolute;
+  top: -4px;
+  right: 8px;
+}
+
+.form__fieldset--phone:hover .svg--phone,
+.form__fieldset--phone:focus .svg--phone {
+  fill: $bg-green;
+}
+
+.form__fieldset--phone:active .svg--phone {
+  fill: $bg-green;
+}
+
+.form__fieldset--phone .form__legend {
+  margin-bottom: 22px;
+}
+
+.form__fieldset--email {
+  padding-bottom: 12px;
+}
+
+.form__fieldset--email:hover .svg--email path,
+.form__fieldset--email:focus .svg--email path {
+  fill: $bg-green;
+}
+
+.form__fieldset--email:active .svg--email path {
+  fill: $bg-green;
+}
+
+.form__fieldset--email .form__field-wrapper {
+  position: relative;
+}
+
+.svg--email {
+  position: absolute;
+  top: -4px;
+  right: 4px;
+}
+
+.form__fieldset--email .form__legend {
+  margin-bottom: 22px;
 }
 
 .form__fieldset--add {
@@ -104,13 +148,28 @@
   margin-bottom: 26px;
 }
 
+.form__fieldset--add .form__field {
+  padding: 14px;
+  padding-bottom: 0;
+}
+
 .form__fieldset--add .form__field-wrapper {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 /////////////////radio button/////////////////
 .form__input--radio {
   opacity: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .form__radio-label,
@@ -138,6 +197,15 @@
   top: -9px;
 }
 
+.form__radio-label:hover::before,
+.form__radio-label:focus::before {
+  border: 2px solid $bg-green;
+}
+
+.form__radio-label:active::before {
+  border: 2px solid #c7c7c7;
+}
+
 .form__radio-label::after {
   height: 16px;
   width: 16px;
@@ -163,6 +231,16 @@
 /////////////////checkbox/////////////////
 .form__input--checkbox {
   opacity: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .form__checkbox-label {
@@ -184,6 +262,15 @@
   border: 2px solid $c-text-alt;
   left: 0;
   top: -10px;
+}
+
+.form__checkbox-label:hover::before,
+.form__checkbox-label:focus::before {
+  border: 2px solid $bg-green;
+}
+
+.form__checkbox-label:active::before {
+  border: 2px solid #c7c7c7;
 }
 
 .form__checkbox-label::after {
@@ -209,18 +296,40 @@
 }
 //////////////////////////////////
 .form__field {
-  color: $c-text-alt;
+  color: #d2d2d2;
+  font-family: $ff-base;
   font-size: $fz-base;
   font-weight: $fw-base;
   line-height: 18px;
+  width: 100%;
   border: none;
   border-bottom: 2px solid $c-text-base;
   padding-bottom: 16px;
 }
 
+.form__field:hover,
+.form__field:focus {
+  color: $c-text-alt;
+  border-bottom: 2px solid $bg-green;
+}
+
+.modal-form__field:active {
+  border-bottom: 2px solid $bg-green;
+}
+
 .form__textarea {
   border: 2px solid $c-text-base;
   width: 100%;
+  resize: none;
+}
+
+.form__textarea:hover,
+.form__textarea:focus {
+  border: 2px solid $bg-green;
+}
+
+.form__textarea:active {
+  border-bottom: 2px solid $bg-green;
 }
 
 .form__note {
@@ -243,6 +352,11 @@
 @media (min-width: $tablet-width) {
   .form {
     width: 100%;
+    padding-bottom: 50px;
+  }
+
+  .form__fieldset {
+    padding-bottom: 11px;
   }
 
   .form__fieldset-wrapper {
@@ -266,7 +380,7 @@
   }
 
   .form__field-wrapper {
-    width: 74%;
+    width: 75%;
   }
 
   .form__field {
@@ -274,16 +388,17 @@
     font-size: $fz-l;
     font-weight: $fw-base;
     line-height: 18px;
+    margin-top: -5px;
     padding-bottom: 13px;
     padding-left: 20px;
   }
 
-  .form__radio-label,
-  .form__checkbox-label {
-    font-size: $fz-l;
-    font-weight: $fw-bold;
-    line-height: 18px;
-  }
+  // .form__radio-label,
+  // .form__checkbox-label {
+  //   font-size: $fz-l;
+  //   font-weight: $fw-bold;
+  //   line-height: 18px;
+  // }
 
   .form__fieldset--type .form__option {
     margin-bottom: 56px;
@@ -311,13 +426,14 @@
   .form__fieldset--name .form__field {
     flex-grow: 1;
     padding-left: 20px;
+    padding-bottom: 13px;
   }
 
   .form__fieldset--name .form__field-wrapper {
     display: flex;
     justify-content: space-between;
     width: 75%;
-    margin-bottom: 38px;
+    margin-bottom: 40px;
   }
 
   .form__note {
@@ -334,7 +450,7 @@
   }
 
   .form__fieldset--colors .form__fieldset-wrapper {
-    padding-top: 56px;
+    padding-top: 66px;
   }
 
   .form__fieldset--colors .form__list {
@@ -342,7 +458,8 @@
   }
 
   .form__fieldset--name {
-    padding-top: 75px;
+    padding-top: 64px;
+    padding-bottom: 8px;
   }
 
   .form__label {
@@ -357,22 +474,33 @@
 
   .form__fieldset--phone {
     padding-top: 66px;
-    padding-bottom: 26px;
+    padding-bottom: 27px;
+  }
+
+  .form__fieldset--phone .form__field {
+    background-color: #f1f1f1;
+  }
+
+  .form__fieldset--email {
+    padding-bottom: 30px;
+  }
+
+  .form__fieldset--email .form__field {
+    background-color: #f1f1f1;
   }
 
   .form__fieldset--add {
-    padding-top: 39px;
-    margin-bottom: 41px;
+    padding-top: 33px;
+    margin-bottom: 27px;
   }
 
   .form__fieldset--add .form__legend {
-    margin-top: 39px;
+    margin-top: 33px;
   }
 
   /////////////////radio button/////////////////
   .form__input--radio {
     opacity: 0;
-    display: none;
   }
 
   .form__radio-label,
@@ -381,6 +509,9 @@
     display: inline-block;
     padding-left: 62px;
     cursor: pointer;
+    font-size: $fz-l;
+    font-weight: $fw-bold;
+    line-height: 18px;
   }
 
   .form__radio-label::before,
@@ -425,7 +556,6 @@
   /////////////////checkbox/////////////////
   .form__input--checkbox {
     opacity: 0;
-    display: none;
   }
 
   .form__checkbox-label {
@@ -471,6 +601,20 @@
     outline: rgb(59, 153, 252) auto 5px;
   }
   //////////////////////////////////
+  .form__fieldset--colors,
+  .form__fieldset--phone,
+  .form__fieldset--email {
+    background-color: #f1f1f1;
+  }
+
+  .svg--phone {
+    right: 19px;
+  }
+
+  .svg--email {
+    top: -6px;
+    right: 16px;
+  }
 }
 
 
@@ -486,6 +630,10 @@
     padding-right: 175px;
   }
 
+  .form__field-wrapper {
+    width: 100%;
+  }
+
   .form__fieldset--type .form__option {
     width: 100%;
   }
@@ -495,8 +643,7 @@
   }
 
   .form__fieldset--colors .form__option {
-    // width: 33.3%;
-    width: 26%;
+    width: 25.8%;
     margin-right: -5px;
   }
 
@@ -513,8 +660,20 @@
     width: 14%;
   }
 
+  .form__fieldset--phone {
+    padding-top: 64px;
+    padding-bottom: 27px;
+  }
+
+  .form__fieldset--phone .form__legend,
+  .form__fieldset--email .form__legend {
+    width: 16.5%;
+    margin-top: 6px;
+  }
+
   .form__fieldset--add {
-    margin-bottom: 37px;
+    margin-bottom: 25px;
+    padding-top: 35px;
   }
 
   .form__fieldset--add .form__legend {
@@ -547,5 +706,14 @@
   .form__radio-label::after {
     left: 17px;
     top: 0;
+  }
+
+  .svg--phone {
+    right: 8px;
+  }
+
+  .svg--email {
+    top: -3px;
+    right: 4px;
   }
 }

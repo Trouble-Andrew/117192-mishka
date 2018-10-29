@@ -10,13 +10,22 @@
   overflow: hidden;
   text-decoration: none;
   width: 130px;
-  height: 50px;
+  height: 52px;
   border: 1px solid #ececec;
   background-color: $bg-white;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
   padding: 0;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+  opacity: 0.6;
+}
+
+.slider__control:active {
+  opacity: 0.3;
 }
 
 .slider__control--prev {
@@ -39,8 +48,8 @@
 
   .slider__controls {
     align-self: flex-end;
-    margin-top: -80px;
-    margin-right: 19px;
+    margin-top: -83px;
+    margin-right: 23px;
   }
 }
 

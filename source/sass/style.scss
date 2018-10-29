@@ -1,4 +1,5 @@
-@import "variables",
+@import "normalize",
+  "variables",
   "mixins",
   "base";
 @import "blocks/page-header",
@@ -26,4 +27,5 @@
   "blocks/making",
   "blocks/page-form",
   "blocks/order",
+  "blocks/modal",
   "blocks/form";

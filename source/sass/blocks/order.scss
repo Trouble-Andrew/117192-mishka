@@ -1,5 +1,5 @@
 .order {
-  width: 320px;
+  width: auto;
   padding-top: 22px;
   padding-left: 30px;
   padding-right: 30px;
@@ -46,6 +46,7 @@
   }
 
   .order__text {
+    width: 700px;
     padding-left: 0;
   }
 }

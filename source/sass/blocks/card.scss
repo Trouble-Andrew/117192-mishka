@@ -3,8 +3,26 @@
   border: 1px solid #ececec;
 }
 
+.card:hover,
+.card:focus {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover .card__link,
+.card:focus .card__link {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.card:active {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card:active .card__link {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .card__image {
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 }
 
 .card__name {
@@ -43,7 +61,7 @@
   display: flex;
   justify-content: space-between;
   padding-top: 25px;
-  padding-left: 28px;
+  padding-left: 27px;
   padding-right: 27px;
 
   &::before {
@@ -65,9 +83,41 @@
 }
 
 .card__buy {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  // width: 100%;
+  color: $c-text-alt;
+  font-size: $fz-s;
+  font-weight: $fw-bold;
+  line-height: 24px;
   border: none;
   background-color: $bg-white;
   cursor: pointer;
+}
+
+.card__svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.card__buy:hover,
+.card__buy:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.card__buy:hover path,
+.card__buy:focus path {
+  fill: $bg_green;
+}
+
+.card__buy:active {
+  opacity: 0.3;
+}
+
+.card__buy:active path {
+  fill: $bg_green;
 }
 
 @media (min-width: $tablet-width) {
@@ -81,6 +131,7 @@
 
   .card__image {
     width: 50%;
+    margin-bottom: 0;
   }
 
   .card__text-wrapper {
@@ -88,10 +139,10 @@
     flex-direction: column;
     justify-content: space-between;
     width: 50%;
-    margin-top: 25px;
+    margin-top: 26px;
     padding-top: 0;
-    padding-bottom: 25px;
-    padding-right: 32px;
+    padding-bottom: 24px;
+    padding-right: 25px;
   }
 
   .card__desc {
@@ -106,15 +157,32 @@
     line-height: 24px;
   }
 
+  .card__link {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+  }
+
   .card__price-wrapper {
-    padding-left: 32px;
+    padding-left: 31px;
+    padding-right: 7px;
 
     &::before {
+      width: 268px;
       top: 1px;
+    }
+
+    .card__svg {
+      // right: 7px;
     }
   }
 
   .card__price {
+    font-size: $fz-base;
+    line-height: 24px;
+  }
+
+  .card__buy {
     font-size: $fz-base;
     line-height: 24px;
   }
@@ -154,10 +222,17 @@
   .card__desc {
     padding-bottom: 15px;
     margin-bottom: 0;
+    margin-top: -17px;
+  }
+
+  .card:last-child .card__desc {
+    margin-top: 0;
   }
 
   .card__price-wrapper {
-    padding-left: 27px;
+    padding-left: 26px;
+    padding-right: 31px;
     padding-bottom: 26px;
+    padding-top: 23px;
   }
 }

@@ -10,6 +10,15 @@
   border: 1px solid #ececec;
 }
 
+.making:hover,
+.making:focus {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.making:active {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
 .making__title {
   color: $c_text_base;
   font-size: $fz-base;
@@ -32,10 +41,11 @@
   margin: 0;
   margin-bottom: 25px;
   padding-left: 34px;
-  padding-right: 43px;
+  padding-right: 34px;
 }
 
 .making__video-link {
+  position: relative;
   margin-bottom: 27px;
   display: block;
 }
@@ -44,6 +54,28 @@
   min-height: 150px;
   background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
+}
+
+.making__video-link svg {
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+}
+
+.making__video-link:hover svg,
+.making__video-link:focus svg {
+  transform: translateX(-50%) translateY(-50%) scale(1.2);
+}
+
+.making__video-link:active svg {
+  transform: translateX(-50%) translateY(-50%) scale(0.8);
+  opacity: 0.6;
+}
+
+.svg--play-active {
+  transform: translateX(-50%) translateY(-50%) scale(0.8);
+  opacity: 0.6;
 }
 
 .making__in-cart {
@@ -80,7 +112,7 @@
     font-size: $fz-s;
     line-height: 30px;
     padding-right: 40px;
-    padding-left: 42px;
+    padding-left: 40px;
     margin-bottom: 35px;
   }
 
@@ -119,7 +151,7 @@
     padding-right: 58px;
     padding-left: 760px;
     padding-bottom: 0;
-    margin-bottom: 104px;
+    margin-bottom: 105px;
     border-top: 1px solid #ececec;
     border-bottom: 1px solid #ececec;
   }
