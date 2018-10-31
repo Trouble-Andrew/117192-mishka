@@ -136,7 +136,7 @@
 
   .site-list__item:first-child {
     margin-right: 0;
-    padding-right: 37px;
+    padding-right: 35px;
     border-right: 1px solid #d3d2d2;
   }
 
@@ -162,6 +162,10 @@
       padding-top: 0;
       padding-bottom: 0;
       border: none;
+
+      &:first-child {
+        padding-right: 31px;
+      }
     }
 
     .site-list__item:last-child {
@@ -171,5 +175,9 @@
     .site-list__link {
       font-size: $fz-s;
     }
+  }
+
+  .site-list--desktop .site-list__link:first-child {
+    letter-spacing: 0.2px;
   }
 }
