@@ -88,6 +88,11 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: auto 457px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   .reviews::after {
@@ -164,6 +169,7 @@
   .reviews__write {
     min-width: 175px;
     top: 25px;
+    right: 0;
   }
 
   .review__text {
