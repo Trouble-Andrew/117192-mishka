@@ -161,6 +161,7 @@
     padding-right: 56%;
     margin-top: 0;
     margin-bottom: 34px;
+    margin-left: 3px;
   }
 
   .popular__deal {
@@ -175,6 +176,7 @@
   .popular__table {
     width: 36%;
     margin-bottom: 54px;
+    margin-left: 3px;
 
     &.table__head {
       padding-right: 21px;
@@ -210,6 +212,10 @@
     width: 50%;
     height: 404px;
   }
+
+  .popular__button {
+    margin-left: 2px;
+  }
 }
 
 
@@ -226,7 +232,7 @@
 
   .popular__wrapper {
     width: 1050px;
-    padding-left: 175px;
+    padding-left: 172px;
   }
 
   .popular__image {
@@ -248,8 +254,8 @@
 
   .popular__deal {
     position: absolute;
-    left: -134px;
-    top: 5px;
+    left: -130px;
+    top: 4px;
     text-transform: uppercase;
   }
 

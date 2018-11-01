@@ -116,12 +116,12 @@
   padding-bottom: 12px;
 }
 
-.form__fieldset--email:hover .form__svg--email path,
-.form__fieldset--email:focus .form__svg--email path {
+.form__fieldset--email:hover .form__svg--email,
+.form__fieldset--email:focus .form__svg--email {
   fill: $bg-green;
 }
 
-.form__fieldset--email:active .form__svg--email path {
+.form__fieldset--email:active .form__svg--email {
   fill: $bg-green;
 }
 

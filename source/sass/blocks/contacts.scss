@@ -153,7 +153,7 @@
     position: absolute;
     content: "";
     top: 48px;
-    right: 55px;
+    right: 53px;
     display: block;
     width: 47px;
     height: 81px;
@@ -185,6 +185,7 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    margin-left: 1px;
   }
 
   .contacts__row {
@@ -237,6 +238,7 @@
 
   .contacts__write-us {
     width: 230px;
+    letter-spacing: 0;
   }
 }
 
