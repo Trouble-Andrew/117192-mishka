@@ -52,8 +52,6 @@
   padding-left: 29px;
   padding-right: 27px;
   background-repeat: no-repeat;
-  // opacity: 0.5;
-  // background-position: right 37px center;
 
   span {
     display: block;
@@ -103,6 +101,11 @@
   svg {
     opacity: 0.3;
   }
+}
+
+.hero-unit__svg--interior,
+.hero-unit__svg--toys {
+  fill: #149080;
 }
 
 @media (min-width: $tablet-width) {

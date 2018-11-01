@@ -17,7 +17,17 @@
   fill: $bg-green;
 }
 
+.page-footer__logo:hover,
+.page-footer__logo:focus {
+  fill: $bg-green;
+}
+
 .page-footer__logo:active path {
+  opacity: 0.3;
+  fill: $bg-green;
+}
+
+.page-footer__logo:active {
   opacity: 0.3;
   fill: $bg-green;
 }
@@ -40,7 +50,17 @@
   fill: #46c1ae;
 }
 
+.social__link:hover .social__svg,
+.social__link:focus .social__svg {
+  fill: #46c1ae;
+}
+
 .social__link:active path {
+  fill: #46c1ae;
+  opacity: 0.3;
+}
+
+.social__link:active .social__svg {
   fill: #46c1ae;
   opacity: 0.3;
 }
