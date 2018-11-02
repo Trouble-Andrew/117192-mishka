@@ -93,18 +93,18 @@
   margin-bottom: 12px;
 }
 
-.svg--phone {
+.form__svg--phone {
   position: absolute;
   top: -4px;
   right: 8px;
 }
 
-.form__fieldset--phone:hover .svg--phone,
-.form__fieldset--phone:focus .svg--phone {
+.form__fieldset--phone:hover .form__svg--phone,
+.form__fieldset--phone:focus .form__svg--phone {
   fill: $bg-green;
 }
 
-.form__fieldset--phone:active .svg--phone {
+.form__fieldset--phone:active .form__svg--phone {
   fill: $bg-green;
 }
 
@@ -116,12 +116,12 @@
   padding-bottom: 12px;
 }
 
-.form__fieldset--email:hover .svg--email path,
-.form__fieldset--email:focus .svg--email path {
+.form__fieldset--email:hover .form__svg--email,
+.form__fieldset--email:focus .form__svg--email {
   fill: $bg-green;
 }
 
-.form__fieldset--email:active .svg--email path {
+.form__fieldset--email:active .form__svg--email {
   fill: $bg-green;
 }
 
@@ -129,7 +129,7 @@
   position: relative;
 }
 
-.svg--email {
+.form__svg--email {
   position: absolute;
   top: -4px;
   right: 4px;
@@ -607,11 +607,11 @@
     background-color: #f1f1f1;
   }
 
-  .svg--phone {
+  .form__svg--phone {
     right: 19px;
   }
 
-  .svg--email {
+  .form__svg--email {
     top: -6px;
     right: 16px;
   }
@@ -708,11 +708,11 @@
     top: 0;
   }
 
-  .svg--phone {
+  .form__svg--phone {
     right: 8px;
   }
 
-  .svg--email {
+  .form__svg--email {
     top: -3px;
     right: 4px;
   }

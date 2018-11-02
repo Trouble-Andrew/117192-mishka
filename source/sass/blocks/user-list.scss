@@ -22,6 +22,11 @@
     opacity: 1;
   }
 
+  &:hover .user-list__svg {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+
   &:focus {
     opacity: 0.6;
   }
@@ -35,6 +40,7 @@
   position: absolute;
   top: 3;
   left: -30px;
+  fill: #d3d2d2;
 }
 
 @media (max-width: $mobile-width-only) {

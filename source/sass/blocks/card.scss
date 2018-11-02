@@ -112,11 +112,20 @@
   fill: $bg_green;
 }
 
+.card__buy:hover .card__svg,
+.card__buy:focus .card__svg {
+  fill: $bg_green;
+}
+
 .card__buy:active {
   opacity: 0.3;
 }
 
 .card__buy:active path {
+  fill: $bg_green;
+}
+
+.card__buy:active .card__svg {
   fill: $bg_green;
 }
 

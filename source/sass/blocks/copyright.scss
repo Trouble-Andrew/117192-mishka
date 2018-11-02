@@ -17,8 +17,17 @@
   fill: #46c1ae;
 }
 
+.copyright__link:hover .copyright__svg,
+.copyright__link:focus .copyright__svg {
+  fill: #46c1ae;
+}
+
 .copyright__link:active {
   opacity: 0.3;
+}
+
+.copyright__svg {
+  fill: #63d1bb;
 }
 
 @media (min-width: $tablet-width) {

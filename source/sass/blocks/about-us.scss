@@ -2,6 +2,10 @@
   padding-top: 5px;
 }
 
+.about-us__svg {
+  fill: #63d1bb;
+}
+
 .about-us__title {
   color: $c-text-base;
   font-size: $fz-xl;
@@ -153,6 +157,10 @@
   .about-us__item:nth-child(6) .about-us__image {
     margin-left: 4px;
   }
+
+  .about-us__svg {
+    fill: #63d1bb;
+  }
 }
 
 
@@ -185,7 +193,7 @@
   }
 
   .about-us__text {
-    letter-spacing: 0.3px;
+    letter-spacing: 0.1px;
   }
 
   .about-us__image {

@@ -113,6 +113,10 @@
     margin-bottom: 49px;
   }
 
+  .reviews__list {
+    margin-left: 3px;
+  }
+
   .reviews__write {
     position: absolute;
     top: 28px;
@@ -131,10 +135,13 @@
 
   .review__author {
     padding-right: 200px;
+    letter-spacing: 0.7px;
   }
 
   .review__author-nickname {
     padding-right: 200px;
+    margin-top: 3px;
+    margin-bottom: 28px;
   }
 }
 
@@ -144,7 +151,7 @@
     max-width: 1050px;
     min-height: 457px;
     padding-top: 54px;
-    padding-bottom: 127px;
+    padding-bottom: 125px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -156,7 +163,7 @@
   .reviews__wrapper {
     width: 1050px;
     margin: 0 auto;
-    padding-left: 174px;
+    padding-left: 172px;
     padding-right: 0;
   }
 
@@ -175,5 +182,13 @@
   .review__text {
     margin-bottom: 40px;
     padding-right: 100px;
+  }
+
+  .review__author {
+    letter-spacing: 0.1px;
+  }
+
+  .review__author-nickname {
+    margin-top: 1px;
   }
 }
