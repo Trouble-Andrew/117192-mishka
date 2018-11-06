@@ -74,6 +74,8 @@
 .hero-unit__link--interior:hover,
 .hero-unit__link--interior:focus {
   background-color: #59d5bc;
+  box-shadow: 0 -5px 0 0 #59d5bc;
+  padding-top: 22px;
 
   svg {
     opacity: 1;
@@ -90,6 +92,8 @@
 .hero-unit__link--dark:hover,
 .hero-unit__link--dark:focus {
   background-color: #46c1ae;
+  box-shadow: 0 -5px 0 0 #46c1ae;
+  padding-top: 22px;
 
   svg {
     opacity: 1;
@@ -202,5 +206,19 @@
   .hero-unit__link {
     padding-left: 36px;
     padding-top: 27px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  @media (min-width: $tablet-width) {
+    .hero-unit {
+      margin-top: -44px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .hero-unit {
+      margin-top: -25px;
+    }
   }
 }

@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
 </head>
 
 <body>
@@ -206,8 +208,8 @@
           </li>
         </ul>
         <div class="slider__controls">
-          <button class="slider__control slider__control--prev" type="button"></button>
-          <button class="slider__control slider__control--next" type="button"></button>
+          <button class="slider__control slider__control--prev" type="button">Назад</button>
+          <button class="slider__control slider__control--next" type="button">Вперед</button>
         </div>
         <a href="" class="reviews__write button">Написать</a>
       </div>
@@ -271,6 +273,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+          <b class="copyright__text">Разработано</b>
           <svg xmlns="http://www.w3.org/2000/svg" width="27px" height="34px" class="copyright__svg">
             <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
           </svg>
@@ -304,8 +307,10 @@
     </form>
   </section>
 
-<script src="js/script.js"></script>
-<script src="js/svg4everybody.js"></script>
+<script src="js/script.min.js"></script>
+<script src="js/svg4everybody.min.js"></script>
+<script defer src="js/svgxuse.min.js"></script>
+<script defer src="js/picturefill.min.js"></script>
 
 </body>
 

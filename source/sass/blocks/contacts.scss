@@ -347,3 +347,39 @@
     letter-spacing: 0;
   }
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  // .contacts__head {
+  //   width: 19%;
+  // }
+
+  @media (max-width: $mobile-width-only) {
+    .contacts__table {
+      max-width: 320px;
+    }
+
+    .contacts__head {
+      padding-left: 20px;
+    }
+
+    .contacts__row:last-child .contacts__head {
+      width: 19%;
+    }
+
+    .contacts__cell:not(.contacts__head) {
+      width: 200px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    // .contacts__head {
+    //   width: 19%;
+    // }
+  }
+
+  @media (min-width: $desktop-width) {
+    // .contacts__head {
+    //   max-width: 1150px;
+    // }
+  }
+}

@@ -200,3 +200,17 @@
     margin-bottom: 11px;
   }
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  @media (min-width: $tablet-width) {
+    .about-us__list {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .about-us__list {
+      max-width: 1150px;
+    }
+  }
+}

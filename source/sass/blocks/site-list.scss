@@ -117,8 +117,6 @@
     order: -1;
     width: 45%;
     margin-bottom: 17px;
-    // padding-top: 30px;
-    // padding-bottom: 30px;
   }
 
   .site-list__item {
@@ -137,7 +135,7 @@
   .site-list__item:first-child {
     margin-right: 0;
     padding-right: 35px;
-    border-right: 1px solid #d3d2d2;
+    border-right: 1px solid #ececec;
   }
 
   .site-list__link {
@@ -179,5 +177,13 @@
 
   .site-list--desktop .site-list__link:first-child {
     letter-spacing: 0.2px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  @media (min-width: $desktop-width) {
+    .site-list:first-child {
+      margin-bottom: 0;
+    }
   }
 }

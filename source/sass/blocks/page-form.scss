@@ -51,3 +51,18 @@
     background-size: 1158px;
   }
 }
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  @media (min-width: $tablet-width) {
+    .page-form__title {
+      margin-top: -44px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .page-form__title {
+      margin-top: -25px;
+    }
+  }
+}

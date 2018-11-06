@@ -81,7 +81,7 @@
     padding-top: 30px;
     padding-bottom: 33px;
     border: none;
-    border-left: 1px solid #d3d2d2;
+    border-left: 1px solid #ececec;
   }
 
   .user-list__item:first-child {
@@ -136,5 +136,13 @@
 
   .user-list__svg {
     top: 3px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  @media (min-width: $desktop-width) {
+    .user-list {
+      margin-bottom: 0;
+    }
   }
 }

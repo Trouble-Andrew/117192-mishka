@@ -283,3 +283,11 @@
     width: 292px;
   }
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  @media (min-width: $tablet-width) {
+    .popular__table .table__head {
+      text-align: left;
+    }
+  }
+}

@@ -717,3 +717,21 @@
     right: 4px;
   }
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .form__legend {
+    &::after {
+      left: 50px;
+      width: 198px;
+    }
+  }
+}
+
+@-moz-document url-prefix() {
+  .form__legend {
+    &::after {
+      left: 50px;
+      width: 198px;
+    }
+  }
+}
