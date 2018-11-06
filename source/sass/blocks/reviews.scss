@@ -32,7 +32,7 @@
   font-size: $fz-xl;
   font-weight: $fw-bold;
   line-height: 30px;
-  margin-top: 26px;
+  margin-top: 22px;
   margin-bottom: 9px;
 }
 
@@ -74,6 +74,7 @@
   padding-left: 0;
   padding-right: 0;
   min-width: 100%;
+  letter-spacing: 0.5px;
 }
 
 // @media (max-width: $mobile-width-only) {
@@ -83,7 +84,7 @@
   .reviews {
     width: 100%;
     min-height: 457px;
-    padding-top: 51px;
+    padding-top: 55px;
     padding-bottom: 94px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -119,7 +120,7 @@
 
   .reviews__write {
     position: absolute;
-    top: 28px;
+    top: 24px;
     right: 4px;
     min-width: 175px;
     align-self: flex-end;

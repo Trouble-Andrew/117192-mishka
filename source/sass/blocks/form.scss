@@ -18,6 +18,7 @@
   line-height: 16px;
   text-transform: uppercase;
   margin-bottom: 35px;
+  width: 100%;
 
   &::after {
     position: absolute;
@@ -314,6 +315,10 @@
 }
 
 .modal-form__field:active {
+  border-bottom: 2px solid $bg-green;
+}
+
+.form__field:required:valid {
   border-bottom: 2px solid $bg-green;
 }
 
@@ -719,19 +724,25 @@
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .form__legend {
-    &::after {
-      left: 50px;
-      width: 198px;
+  @media (max-width: $mobile-width-only) {
+    .form__legend {
+      width: 100%;
+
+      &::after {
+        width: 76.15%;
+      }
     }
   }
 }
 
 @-moz-document url-prefix() {
-  .form__legend {
-    &::after {
-      left: 50px;
-      width: 198px;
+  @media (max-width: $mobile-width-only) {
+    .form__legend {
+      width: 100%;
+
+      &::after {
+        width: 76.15%;
+      }
     }
   }
 }

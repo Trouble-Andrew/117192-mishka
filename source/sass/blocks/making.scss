@@ -217,3 +217,17 @@
     padding-right: 0;
   }
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .making__video-link:hover svg,
+  .making__video-link:focus svg {
+    transform: translateX(-50%) translateY(-50%) scale(1.2);
+  }
+
+  .making__video-link:active svg {
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    opacity: 0.6;
+    filter: alpha(opacity = 50);
+    fill: rgba(98, 209, 186, 0.6);
+  }
+}

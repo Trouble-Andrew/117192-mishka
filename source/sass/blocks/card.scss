@@ -129,13 +129,6 @@
   fill: $bg_green;
 }
 
-@-moz-document url-prefix() {
-  .card__buy {
-    padding: 10px;
-  }
-}
-
-
 @media (min-width: $tablet-width) {
   .card {
     width: 668px;
@@ -267,6 +260,23 @@
 
     .card:last-child .card__name {
       min-height: 49px;
+    }
+  }
+}
+
+@-moz-document url-prefix() {
+  .card__buy {
+    padding: 10px;
+  }
+
+  @media (min-width: $tablet-width) {
+    .card__text-wrapper {
+      margin-top: 24px;
+    }
+
+    .card__name {
+      min-height: 25px;
+      margin-bottom: 5px;
     }
   }
 }

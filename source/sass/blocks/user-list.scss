@@ -139,10 +139,10 @@
   }
 }
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  @media (min-width: $desktop-width) {
-    .user-list {
-      margin-bottom: 0;
-    }
-  }
-}
+// @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+//   @media (min-width: $desktop-width) {
+//     .user-list {
+//       margin-bottom: 0;
+//     }
+//   }
+// }
