@@ -146,7 +146,7 @@
 }
 
 .form__fieldset--add .form__legend {
-  margin-bottom: 26px;
+  margin-bottom: 5px;
 }
 
 .form__fieldset--add .form__field {
@@ -155,7 +155,7 @@
 }
 
 .form__fieldset--add .form__field-wrapper {
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 }
 
 /////////////////radio button/////////////////
@@ -361,17 +361,24 @@
   }
 
   .form__fieldset {
+    position: relative;
+    display: flex;
+    flex-direction: row;
     padding-bottom: 11px;
   }
 
   .form__fieldset-wrapper {
     display: flex;
-    width: 668px;
-    margin: 0 auto;
+    width: 71.8%;
+    margin-left: auto;
   }
 
   .form__legend {
-    width: 25%;
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 6.63%;
+    margin-bottom: 0;
 
     &::after {
       display: none;
@@ -381,11 +388,12 @@
   .form__list {
     display: flex;
     flex-wrap: wrap;
-    width: 74%;
+    padding-right: 10.32%;
   }
 
   .form__field-wrapper {
-    width: 75%;
+    width: 100%;
+    padding-right: 9%;
   }
 
   .form__field {
@@ -398,15 +406,9 @@
     padding-left: 20px;
   }
 
-  // .form__radio-label,
-  // .form__checkbox-label {
-  //   font-size: $fz-l;
-  //   font-weight: $fw-bold;
-  //   line-height: 18px;
-  // }
-
   .form__fieldset--type .form__option {
     margin-bottom: 56px;
+    margin-right: 100px;
   }
 
   .form__fieldset--type .form__radio-label {
@@ -418,14 +420,16 @@
     margin-bottom: 57px;
   }
 
+  .form__fieldset--colors .form__legend {
+    top: 68px;
+  }
+
   .form__fieldset--name .form__fieldset-wrapper {
     flex-wrap: wrap;
-    justify-content: flex-end;
   }
 
   .form__fieldset--name .form__legend {
-    margin-right: 0;
-    width: 25%;
+    top: 67px;
   }
 
   .form__fieldset--name .form__field {
@@ -437,14 +441,15 @@
   .form__fieldset--name .form__field-wrapper {
     display: flex;
     justify-content: space-between;
-    width: 75%;
+    width: 100%;
+    padding-right: 9%;
     margin-bottom: 40px;
   }
 
   .form__note {
     position: absolute;
     bottom: -18px;
-    right: 0;
+    right: 49px;
     font-size: $fz-base;
     font-weight: $fw-base;
     line-height: 30px;
@@ -482,6 +487,10 @@
     padding-bottom: 27px;
   }
 
+  .form__fieldset--phone .form__legend {
+    top: 68px;
+  }
+
   .form__fieldset--phone .form__field {
     background-color: #f1f1f1;
   }
@@ -500,7 +509,13 @@
   }
 
   .form__fieldset--add .form__legend {
-    margin-top: 33px;
+    top: 67px;
+  }
+
+  .form__fieldset-wrapper--submit {
+    width: 100%;
+    padding-left: 6.5%;
+    padding-right: 9%;
   }
 
   /////////////////radio button/////////////////
@@ -613,12 +628,12 @@
   }
 
   .form__svg--phone {
-    right: 19px;
+    right: 76px;
   }
 
   .form__svg--email {
-    top: -6px;
-    right: 16px;
+    top: -5px;
+    right: 72px;
   }
 }
 
@@ -631,12 +646,23 @@
   .form__fieldset-wrapper {
     width: 1050px;
     margin: 0 auto;
-    padding-left: 60px;
+    padding-left: 175px;
     padding-right: 175px;
+  }
+
+  .form__legend {
+    width: 100px;
+    left: 50%;
+    transform: translateX(-460px);
+  }
+
+  .form__list {
+    padding-right: 0;
   }
 
   .form__field-wrapper {
     width: 100%;
+    padding-right: 0;
   }
 
   .form__fieldset--type .form__option {
@@ -652,9 +678,15 @@
     margin-right: -5px;
   }
 
+  .form__fieldset--name {
+    padding-bottom: 11px;
+  }
+
   .form__fieldset--name .form__field-wrapper {
     width: 700px;
     display: flex;
+    padding-right: 0;
+    margin-bottom: 39px;
   }
 
   .form__fieldset--name .form__label {
@@ -662,7 +694,7 @@
   }
 
   .form__fieldset--name .form__legend {
-    width: 14%;
+    width: 100px;
   }
 
   .form__fieldset--phone {
@@ -670,14 +702,16 @@
     padding-bottom: 27px;
   }
 
-  .form__fieldset--phone .form__legend,
+  .form__fieldset--phone .form__legend {
+    margin-top: 0;
+  }
+
   .form__fieldset--email .form__legend {
-    width: 16.5%;
-    margin-top: 6px;
+    margin-top: 4px;
   }
 
   .form__fieldset--add {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
     padding-top: 35px;
   }
 
@@ -689,6 +723,10 @@
     width: 100%;
   }
 
+  .form__fieldset-wrapper--submit {
+    padding-left: 60px;
+  }
+
   .form__note {
     position: absolute;
     bottom: -18px;
@@ -697,10 +735,6 @@
 
   .form__button {
     margin-left: 115px;
-  }
-
-  .form__legend {
-    width: 14%;
   }
 
   .form__radio-label::before {
