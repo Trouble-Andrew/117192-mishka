@@ -44,13 +44,8 @@
   padding-right: 34px;
 }
 
-.making__video-link {
-  position: relative;
-  margin-bottom: 27px;
-  display: block;
-}
-
 .making__video {
+  position: relative;
   min-height: 150px;
   background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -61,19 +56,30 @@
   }
 }
 
-.making__video-link svg {
+// .making__video-link svg {
+//   position: absolute;
+//   top: 50%;
+//   transform: translateX(-50%) translateY(-50%);
+//   left: 50%;
+// }
+
+.making__video-link {
   position: absolute;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
   left: 50%;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  outline: 0;
 }
 
-.making__video-link:hover svg,
-.making__video-link:focus svg {
+.making__video-link:hover,
+.making__video-link:focus {
   transform: translateX(-50%) translateY(-50%) scale(1.2);
 }
 
-.making__video-link:active svg {
+.making__video-link:active {
   transform: translateX(-50%) translateY(-50%) scale(0.8);
   opacity: 0.6;
 }
@@ -122,9 +128,6 @@
   }
 
   .making__video-link {
-    order: -1;
-    width: 100%;
-    height: 455px;
     margin-bottom: 37px;
   }
 
@@ -219,12 +222,12 @@
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .making__video-link:hover svg,
-  .making__video-link:focus svg {
+  .making__video-link:hover,
+  .making__video-link:focus {
     transform: translateX(-50%) translateY(-50%) scale(1.2);
   }
 
-  .making__video-link:active svg {
+  .making__video-link:active {
     transform: translateX(-50%) translateY(-50%) scale(0.8);
     opacity: 0.6;
     filter: alpha(opacity = 50);
