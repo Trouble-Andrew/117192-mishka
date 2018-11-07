@@ -64,6 +64,11 @@ gulp.task("compress", function (cb) {
   );
 });
 
+gulp.task("libs", function () {
+  return gulp.src("source/js/libs/*.min.js")
+    .pipe(gulp.dest("build/js/libs"));
+});
+
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
@@ -107,5 +112,5 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "html", "compress"));
+gulp.task("build", gulp.series("clean", "copy", "css", "html", "compress", "libs"));
 gulp.task("start", gulp.series("build", "server"));

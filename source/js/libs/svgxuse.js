@@ -119,6 +119,9 @@
                         svg.setAttribute("aria-hidden", "true");
                         svg.style.position = "absolute";
                         svg.style.width = 0;
+                        svg.style.maxWidth = 0;
+                        svg.style.left = 0;
+                        svg.style.top = 0;
                         svg.style.height = 0;
                         svg.style.overflow = "hidden";
                         body.insertBefore(svg, body.firstChild);
