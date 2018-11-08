@@ -221,6 +221,15 @@
   top: 3px;
 }
 
+.form__input:disabled + .form__radio-label {
+  cursor: auto;
+  opacity: 0.6;
+}
+
+.form__input:disabled + .form__radio-label:hover::before {
+  border: 2px solid $c-text-alt;
+}
+
 .form__input--radio + .form__radio-label::after {
   content: none;
 }
@@ -287,6 +296,15 @@
   transform: rotate(-45deg);
   left: 10px;
   top: 2px;
+}
+
+.form__input:disabled + .form__checkbox-label {
+  cursor: auto;
+  opacity: 0.6;
+}
+
+.form__input:disabled + .form__checkbox-label:hover::before {
+  border: 2px solid $c-text-alt;
 }
 
 .form__input--checkbox + .form__checkbox-label::after {
