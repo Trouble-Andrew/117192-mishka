@@ -47,6 +47,7 @@
 .making__video {
   position: relative;
   min-height: 150px;
+  margin-bottom: 27px;
   background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
 
@@ -132,8 +133,10 @@
   }
 
   .making__video {
+    order: -1;
     background-image: url("../img/video-tablet@1x.jpg");
     height: 455px;
+    margin-bottom: 37px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/video-tablet@2x.jpg");
@@ -153,6 +156,7 @@
 
 @media (min-width: $desktop-width) {
   .making {
+    position: relative;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -187,17 +191,23 @@
     margin-left: auto;
   }
 
-  .making__video-link {
+  // .making__video-link {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 64.95%;
+  //   margin-bottom: 0;
+  // }
+
+  .making__video {
     position: absolute;
     top: 0;
     left: 0;
     width: 64.95%;
     margin-bottom: 0;
-  }
-
-  .making__video {
     background-image: url("../img/video-desktop@1x.jpg");
     height: 455px;
+    width: 682px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/video-desktop@2x.jpg");
