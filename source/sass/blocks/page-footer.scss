@@ -81,6 +81,10 @@
   //   opacity: 0.3;
   // }
 
+  .social__link {
+    pointer-events: visibleFill;
+  }
+
   .social__svg:active {
     fill: #46c1ae;
     opacity: 0.3;

@@ -86,7 +86,8 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  // width: 100%;
+  width: 30px;
+  overflow: hidden;
   color: $c-text-alt;
   font-size: 0;
   line-height: 0;
