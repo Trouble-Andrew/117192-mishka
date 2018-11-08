@@ -292,10 +292,10 @@
   }
 }
 
-@-moz-document url-prefix() {
-  @media (min-width: $tablet-width) {
-    .popular {
-      padding-top: 31px;
-    }
-  }
-}
+// @-moz-document url-prefix() {
+//   @media (min-width: $tablet-width) {
+//     .popular {
+//       padding-top: 31px;
+//     }
+//   }
+// }

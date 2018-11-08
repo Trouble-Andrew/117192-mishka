@@ -194,10 +194,10 @@
   }
 }
 
-@-moz-document url-prefix() {
-  @media (min-width: $desktop-width) {
-    .reviews__title{
-      margin-bottom: 47px;
-    }
-  }
-}
+// @-moz-document url-prefix() {
+//   @media (min-width: $desktop-width) {
+//     .reviews__title {
+//       margin-bottom: 47px;
+//     }
+//   }
+// }
