@@ -191,14 +191,6 @@
     margin-left: auto;
   }
 
-  // .making__video-link {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 64.95%;
-  //   margin-bottom: 0;
-  // }
-
   .making__video {
     position: absolute;
     top: 0;
@@ -207,7 +199,7 @@
     margin-bottom: 0;
     background-image: url("../img/video-desktop@1x.jpg");
     height: 455px;
-    width: 682px;
+    // width: 682px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/video-desktop@2x.jpg");

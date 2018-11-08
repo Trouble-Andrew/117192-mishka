@@ -27,6 +27,13 @@
   fill: $bg-green;
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .page-footer__logo svg:active {
+    opacity: 0.3;
+    fill: $bg-green;
+  }
+}
+
 .page-footer__logo:active {
   opacity: 0.3;
   fill: $bg-green;
@@ -63,6 +70,17 @@
 .social__link:active .social__svg {
   fill: #46c1ae;
   opacity: 0.3;
+}
+
+.social__link:active {
+  opacity: 0.3;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .social__svg:active {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

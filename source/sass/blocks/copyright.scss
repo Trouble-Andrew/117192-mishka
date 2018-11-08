@@ -12,8 +12,8 @@
   align-items: center;
 }
 
-.copyright__link:hover path,
-.copyright__link:focus path {
+.copyright__link:hover,
+.copyright__link:focus {
   fill: #46c1ae;
 }
 
@@ -28,6 +28,17 @@
 
 .copyright__svg {
   fill: #63d1bb;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .copyright__link:active {
+    opacity: 0.3;
+  }
+
+  .copyright__link b:active,
+  .copyright__svg:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
