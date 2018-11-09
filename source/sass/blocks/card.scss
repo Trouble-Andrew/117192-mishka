@@ -1,24 +1,24 @@
 .card {
   padding-bottom: 27px;
   border: 1px solid #ececec;
-}
 
-.card:hover,
-.card:focus {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-}
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
 
-.card:hover .card__link,
-.card:focus .card__link {
-  color: rgba(0, 0, 0, 0.6);
-}
+  &:hover .card__link,
+  &:focus .card__link {
+    color: rgba(0, 0, 0, 0.6);
+  }
 
-.card:active {
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-}
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 
-.card:active .card__link {
-  color: rgba(0, 0, 0, 0.3);
+  &:active .card__link {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .card__image {
@@ -86,7 +86,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  width: 30px;
+  width: 21px;
   overflow: hidden;
   color: $c-text-alt;
   font-size: 0;
@@ -95,39 +95,39 @@
   border: none;
   background-color: $bg-white;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: $bg_green;
+  }
+
+  &:hover .card__svg,
+  &:focus .card__svg {
+    fill: $bg_green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active path {
+    fill: $bg_green;
+  }
+
+  &:active .card__svg {
+    fill: $bg_green;
+  }
 }
 
 .card__svg {
   position: absolute;
   top: 0;
   right: 0;
-}
-
-.card__buy:hover,
-.card__buy:focus {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.card__buy:hover path,
-.card__buy:focus path {
-  fill: $bg_green;
-}
-
-.card__buy:hover .card__svg,
-.card__buy:focus .card__svg {
-  fill: $bg_green;
-}
-
-.card__buy:active {
-  opacity: 0.3;
-}
-
-.card__buy:active path {
-  fill: $bg_green;
-}
-
-.card__buy:active .card__svg {
-  fill: $bg_green;
 }
 
 @media (min-width: $tablet-width) {

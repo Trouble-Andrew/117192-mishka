@@ -16,6 +16,46 @@
 .social__link {
   width: 30px;
   height: 30px;
+
+  &:hover path,
+  &:focus path {
+    fill: #46c1ae;
+  }
+
+  &:hover .social__svg,
+  &:focus .social__svg {
+    fill: #46c1ae;
+  }
+
+  &:active .social__svg {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+}
+
+// .social__link:active {
+//   opacity: 0.3;
+// }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  // .social__link:active {
+  //   opacity: 0.3;
+  // }
+
+  .social__link {
+    pointer-events: visibleFill;
+  }
+
+  .social__svg:active {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+
+  // .social__link {
+  //   display: inline-block;
+  //   text-align: center;
+  //   vertical-align: baseline;
+  // }
 }
 
 @media (min-width: $tablet-width) {

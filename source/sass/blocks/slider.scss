@@ -18,15 +18,15 @@
   background-position: center;
   cursor: pointer;
   padding: 0;
-}
 
-.slider__control:hover,
-.slider__control:focus {
-  opacity: 0.6;
-}
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
 
-.slider__control:active {
-  opacity: 0.3;
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .slider__control--prev {

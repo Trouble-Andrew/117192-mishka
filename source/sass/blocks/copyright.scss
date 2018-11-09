@@ -10,20 +10,20 @@
   @include clear-link;
   display: flex;
   align-items: center;
-}
 
-.copyright__link:hover,
-.copyright__link:focus {
-  fill: #46c1ae;
-}
+  &:hover,
+  &:focus {
+    fill: #46c1ae;
+  }
 
-.copyright__link:hover .copyright__svg,
-.copyright__link:focus .copyright__svg {
-  fill: #46c1ae;
-}
+  &:hover .copyright__svg,
+  &:focus .copyright__svg {
+    fill: #46c1ae;
+  }
 
-.copyright__link:active {
-  opacity: 0.3;
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__svg {

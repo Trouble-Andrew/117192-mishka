@@ -36,23 +36,20 @@
   padding: 14px 14px;
   margin-left: 7px;
   border: 2px solid $bg-grey;
-}
 
-.size__label:hover,
-.size__label:focus {
-  border: 2px solid #c7c7c7;
-}
+  &:hover,
+  &:focus {
+    border: 2px solid #c7c7c7;
+    cursor: pointer;
+  }
 
-.size__label:active {
-  border: 2px solid $bg-green;
+  &:active {
+    border: 2px solid $bg-green;
+  }
 }
 
 .size__label[value="size-s"] {
   margin-left: 0;
-}
-
-.size__label:hover {
-  cursor: pointer;
 }
 
 .size__input:checked + label {
