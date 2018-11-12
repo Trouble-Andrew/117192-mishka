@@ -15,7 +15,6 @@
   font-size: 18px;
   font-weight: $fw-bold;
   line-height: 30px;
-  // width: 260px;
   width: 81.25%;
   margin: 0 auto;
   margin-bottom: 25px;
@@ -24,7 +23,6 @@
 .contacts__table {
   margin: 0 auto;
   margin-bottom: 35px;
-  // width: 260px;
   width: 81.25%;
 }
 
@@ -50,8 +48,6 @@
 }
 
 .contacts__cell {
-  // width: 150px;
-  // width: 46.875%;
   line-height: 30px;
 }
 
@@ -95,7 +91,6 @@
 .contacts__map-link {
   display: block;
   background-image: url("../img/map-mobile@1x.jpg");
-  // width: 320px;
   width: 100%;
   height: 457px;
   margin: 0 auto;
@@ -126,26 +121,12 @@
     display: flex;
   }
 
-  // .contacts__head {
-  //   width: 134px;
-  // }
-
   .contacts__cell:not(.contacts__head) {
     width: 57.69%;
   }
 }
 
 @media (min-width: $tablet-width) {
-  // .contacts {
-  //   position: relative;
-  //   flex-direction: row;
-  //   flex-wrap: wrap;
-  //   padding-left: 0;
-  //   padding-right: 0;
-  //   padding-top: 63px;
-  //   padding-bottom: 57px;
-  // }
-
   .contacts__wrapper {
     position: relative;
     flex-direction: row;
@@ -170,7 +151,6 @@
   }
 
   .contacts__title {
-    // width: 668px;
     width: 88%;
     margin: 0 auto;
     margin-bottom: 49px;
@@ -180,7 +160,6 @@
 
   .contacts__table {
     margin: 0 auto;
-    // width: 668px;
     width: 88%;
     margin-bottom: 54px;
     font-size: $fz-base;
@@ -250,19 +229,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  // .contacts {
-  //   width: 1050px;
-  //   min-height: 636px;
-  //   margin: 0 auto;
-  //   padding-left: 174px;
-  //   padding-right: 29%;
-  //   padding-top: 166px;
-  //   padding-bottom: 105px;
-  //   display: flex;
-  //   justify-content: flex-start;
-  //   flex-direction: column;
-  // }
-
   .contacts__wrapper {
     width: 1050px;
     min-height: 636px;
@@ -358,10 +324,6 @@
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  // .contacts__head {
-  //   width: 19%;
-  // }
-
   @media (max-width: $mobile-width-only) {
     .contacts__table {
       max-width: 320px;
@@ -378,17 +340,5 @@
     .contacts__cell:not(.contacts__head) {
       width: 200px;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    // .contacts__head {
-    //   width: 19%;
-    // }
-  }
-
-  @media (min-width: $desktop-width) {
-    // .contacts__head {
-    //   max-width: 1150px;
-    // }
   }
 }

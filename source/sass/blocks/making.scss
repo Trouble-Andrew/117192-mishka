@@ -3,8 +3,6 @@
   width: 260px;
   margin: 0 auto;
   margin-bottom: 58px;
-  // padding-left: 30px;
-  // padding-right: 30px;
   padding-top: 24px;
   padding-bottom: 33px;
   border: 1px solid #ececec;
@@ -56,13 +54,6 @@
     background-size: 260px auto;
   }
 }
-
-// .making__video-link svg {
-//   position: absolute;
-//   top: 50%;
-//   transform: translateX(-50%) translateY(-50%);
-//   left: 50%;
-// }
 
 .making__video-link {
   position: absolute;
@@ -200,7 +191,6 @@
     margin-bottom: 0;
     background-image: url("../img/video-desktop@1x.jpg");
     height: 455px;
-    // width: 682px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/video-desktop@2x.jpg");

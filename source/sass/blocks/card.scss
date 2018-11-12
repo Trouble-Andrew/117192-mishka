@@ -184,10 +184,6 @@
       width: 268px;
       top: 1px;
     }
-
-    .card__svg {
-      // right: 7px;
-    }
   }
 
   .card__price {
@@ -266,32 +262,3 @@
     }
   }
 }
-
-// @-moz-document url-prefix() {
-//   .card__buy {
-//     padding: 10px;
-//   }
-//
-//   @media (min-width: $tablet-width) {
-//     .card__text-wrapper {
-//       margin-top: 24px;
-//     }
-//
-//     .card__name {
-//       min-height: 25px;
-//       margin-bottom: 5px;
-//     }
-//   }
-// }
-
-// @-moz-document url-prefix() {
-//   @media (min-width: $desktop-width) {
-//     .card__desc {
-//       padding-left: 25px;
-//     }
-//
-//     .card__name {
-//       margin-bottom: 2px;
-//     }
-//   }
-// }

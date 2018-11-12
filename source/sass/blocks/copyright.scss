@@ -31,11 +31,16 @@
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .copyright__link:active {
-    opacity: 0.3;
+  .copyright__link {
+    &:active {
+      opacity: 0.3;
+    }
+
+    & b:active {
+      opacity: 0.3;
+    }
   }
 
-  .copyright__link b:active,
   .copyright__svg:active {
     opacity: 0.3;
   }

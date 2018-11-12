@@ -35,7 +35,6 @@ function addOrderBtn() {
     var i;
     var orderBtn = document.getElementsByClassName("order-link");
     for (i = 0; i < orderBtn.length; i++) {
-      // orderBtn[i].classList.remove("slider__slide--active");
       orderBtn[i].addEventListener("click", function(evt) {
         evt.preventDefault();
         popup.classList.add("modal--show");

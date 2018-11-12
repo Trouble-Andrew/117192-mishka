@@ -52,9 +52,6 @@
   letter-spacing: 0.5px;
 }
 
-// @media (max-width: $mobile-width-only) {
-// }
-
 @media (min-width: $tablet-width) {
   .reviews {
     width: 100%;
@@ -111,10 +108,10 @@
     padding-bottom: 125px;
     padding-left: 0;
     padding-right: 0;
-  }
 
-  .reviews::after {
-    display: none;
+    &::after {
+      display: none;
+    }
   }
 
   .reviews__wrapper {
@@ -136,11 +133,3 @@
     right: 0;
   }
 }
-
-// @-moz-document url-prefix() {
-//   @media (min-width: $desktop-width) {
-//     .reviews__title {
-//       margin-bottom: 47px;
-//     }
-//   }
-// }

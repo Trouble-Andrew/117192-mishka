@@ -33,9 +33,11 @@
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .page-footer__logo svg:active {
-    opacity: 0.3;
-    fill: $bg-green;
+  .page-footer__logo svg {
+    &:active {
+      opacity: 0.3;
+      fill: $bg-green;
+    }
   }
 }
 
