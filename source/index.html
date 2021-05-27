@@ -159,7 +159,11 @@
           </tr>
         </table>
         <div class="popular__image">
-          <img src="/img/triple-set-mobile@1x.jpg" alt="Вязанные корзинки">
+          <picture>
+            <source srcset="/img/triple-set-desktop@2x" media="(min-width: 1024px)">
+            <source srcset="/img/triple-set-tablet@1x" media="(min-width: 600px)">
+            <img src="/img/triple-set-mobile@1x.jpg" alt="Вязанные корзинки">
+          </picture>
         </div>
         <div class="popular__order">
           <p class="popular__price">Цена: 990 руб.</p>
