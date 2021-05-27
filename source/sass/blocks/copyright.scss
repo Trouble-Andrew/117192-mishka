@@ -10,15 +10,40 @@
   @include clear-link;
   display: flex;
   align-items: center;
+
+  &:hover,
+  &:focus {
+    fill: #46c1ae;
+  }
+
+  &:hover .copyright__svg,
+  &:focus .copyright__svg {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.copyright__link:hover path,
-.copyright__link:focus path {
-  fill: #46c1ae;
+.copyright__svg {
+  fill: #63d1bb;
 }
 
-.copyright__link:active {
-  opacity: 0.3;
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .copyright__link {
+    &:active {
+      opacity: 0.3;
+    }
+
+    & b:active {
+      opacity: 0.3;
+    }
+  }
+
+  .copyright__svg:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

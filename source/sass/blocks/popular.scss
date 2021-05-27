@@ -2,20 +2,20 @@
   position: relative;
   padding-top: 26px;
   padding-bottom: 19px;
-}
 
-.popular::after {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: 0;
-  display: block;
-  width: 100%;
-  height: 10px;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-repeat: repeat-x;
-  background-position: bottom;
-  background-size: 340px;
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: 340px;
+  }
 }
 
 .popular__wrapper {
@@ -111,11 +111,11 @@
   .popular {
     padding-top: 33px;
     padding-bottom: 67px;
-  }
 
-  .popular::after {
-    height: 15px;
-    background-size: 725px;
+    &::after {
+      height: 15px;
+      background-size: 725px;
+    }
   }
 
   .popular__wrapper {
@@ -161,19 +161,22 @@
     padding-right: 56%;
     margin-top: 0;
     margin-bottom: 34px;
+    margin-left: 3px;
   }
 
   .popular__deal {
     width: 80px;
+    line-height: 17px;
     text-align: center;
     margin-right: 28px;
     margin-bottom: 0;
-    margin-top: 9px;
+    margin-top: 12px;
   }
 
   .popular__table {
     width: 36%;
     margin-bottom: 54px;
+    margin-left: 3px;
 
     &.table__head {
       padding-right: 21px;
@@ -201,13 +204,17 @@
 
   .popular__image {
     position: absolute;
-    top: 110px;
+    top: 107px;
     right: 0;
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 0;
     width: 50%;
     height: 404px;
+  }
+
+  .popular__button {
+    margin-left: 2px;
   }
 }
 
@@ -216,21 +223,21 @@
   .popular {
     padding-bottom: 94px;
     padding-top: 105px;
-  }
 
-  .popular::after {
-    height: 23px;
-    background-size: 950px;
+    &::after {
+      height: 23px;
+      background-size: 950px;
+    }
   }
 
   .popular__wrapper {
     width: 1050px;
-    padding-left: 175px;
+    padding-left: 172px;
   }
 
   .popular__image {
     height: 636px;
-    top: -45px;
+    top: -53px;
     z-index: -1;
   }
 
@@ -247,8 +254,8 @@
 
   .popular__deal {
     position: absolute;
-    left: -134px;
-    top: 5px;
+    left: -130px;
+    top: 4px;
     text-transform: uppercase;
   }
 
@@ -274,5 +281,13 @@
 
   .popular__button {
     width: 292px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  @media (min-width: $tablet-width) {
+    .popular__table .table__head {
+      text-align: left;
+    }
   }
 }

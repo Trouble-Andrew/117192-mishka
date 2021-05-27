@@ -7,6 +7,7 @@
 .slider__control {
   text-align: center;
   line-height: 1;
+  font-size: 0;
   overflow: hidden;
   text-decoration: none;
   width: 130px;
@@ -17,15 +18,15 @@
   background-position: center;
   cursor: pointer;
   padding: 0;
-}
 
-.slider__control:hover,
-.slider__control:focus {
-  opacity: 0.6;
-}
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
 
-.slider__control:active {
-  opacity: 0.3;
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .slider__control--prev {
@@ -66,7 +67,7 @@
 
   .slider__controls {
     align-self: flex-end;
-    margin-top: -87px;
+    margin-top: -83px;
     margin-right: 19px;
   }
 }

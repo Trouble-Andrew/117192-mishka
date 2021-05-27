@@ -1,24 +1,24 @@
 .card {
   padding-bottom: 27px;
   border: 1px solid #ececec;
-}
 
-.card:hover,
-.card:focus {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-}
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
 
-.card:hover .card__link,
-.card:focus .card__link {
-  color: rgba(0, 0, 0, 0.6);
-}
+  &:hover .card__link,
+  &:focus .card__link {
+    color: rgba(0, 0, 0, 0.6);
+  }
 
-.card:active {
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-}
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 
-.card:active .card__link {
-  color: rgba(0, 0, 0, 0.3);
+  &:active .card__link {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .card__image {
@@ -53,7 +53,7 @@
   margin: 0;
   padding-left: 28px;
   padding-right: 27px;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
 }
 
 .card__price-wrapper {
@@ -86,38 +86,48 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  // width: 100%;
+  width: 21px;
+  overflow: hidden;
   color: $c-text-alt;
-  font-size: $fz-s;
-  font-weight: $fw-bold;
-  line-height: 24px;
+  font-size: 0;
+  line-height: 0;
+  padding: 0;
   border: none;
   background-color: $bg-white;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: $bg_green;
+  }
+
+  &:hover .card__svg,
+  &:focus .card__svg {
+    fill: $bg_green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active path {
+    fill: $bg_green;
+  }
+
+  &:active .card__svg {
+    fill: $bg_green;
+  }
 }
 
 .card__svg {
   position: absolute;
   top: 0;
   right: 0;
-}
-
-.card__buy:hover,
-.card__buy:focus {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.card__buy:hover path,
-.card__buy:focus path {
-  fill: $bg_green;
-}
-
-.card__buy:active {
-  opacity: 0.3;
-}
-
-.card__buy:active path {
-  fill: $bg_green;
 }
 
 @media (min-width: $tablet-width) {
@@ -127,6 +137,7 @@
     flex-direction: row;
     padding-bottom: 0;
     min-height: 334px;
+    height: 334px;
   }
 
   .card__image {
@@ -141,7 +152,7 @@
     width: 50%;
     margin-top: 26px;
     padding-top: 0;
-    padding-bottom: 24px;
+    padding-bottom: 29px;
     padding-right: 25px;
   }
 
@@ -155,6 +166,8 @@
     font-size: 20px;
     font-weight: $fw-bold;
     line-height: 24px;
+    margin-bottom: 0;
+    min-height: 27px;
   }
 
   .card__link {
@@ -171,10 +184,6 @@
       width: 268px;
       top: 1px;
     }
-
-    .card__svg {
-      // right: 7px;
-    }
   }
 
   .card__price {
@@ -183,8 +192,8 @@
   }
 
   .card__buy {
-    font-size: $fz-base;
-    line-height: 24px;
+    font-size: 0;
+    line-height: 0;
   }
 }
 
@@ -221,8 +230,9 @@
 
   .card__desc {
     padding-bottom: 15px;
+    padding-left: 25px;
     margin-bottom: 0;
-    margin-top: -17px;
+    margin-top: -20px;
   }
 
   .card:last-child .card__desc {
@@ -234,5 +244,21 @@
     padding-right: 31px;
     padding-bottom: 26px;
     padding-top: 23px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .card__price {
+    margin-right: auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    .card__name {
+      min-height: 25px;
+    }
+
+    .card:last-child .card__name {
+      min-height: 49px;
+    }
   }
 }
